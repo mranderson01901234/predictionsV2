@@ -1,0 +1,30 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.env.*
+
+# Data artifacts (keep only tiny samples explicitly committed)
+data/**
+!data/sample/**
+
+# Model artifacts
+models/artifacts/**
+models/checkpoints/**
+
+# Reports (do not version auto-generated content)
+docs/reports/**
+!docs/reports/sample_phase1.md
+
+# OS noise
+.DS_Store
+Thumbs.db
+
