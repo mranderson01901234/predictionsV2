@@ -23,16 +23,24 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
+    - name: Cache pip packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run sample pipeline (smoke test)
-      run: |
-        python -m orchestration.pipelines.phase1_sample_pipeline
-
     - name: Run tests
       run: |
         pytest -q
+
+    - name: Run Phase 1C pipeline smoke test
+      run: |
+        pytest tests/test_phase1c_pipeline_smoke.py -v
 
