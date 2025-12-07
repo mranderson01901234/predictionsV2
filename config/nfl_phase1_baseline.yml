@@ -1,0 +1,51 @@
+# NFL Phase 1 Baseline Configuration Snapshot
+#
+# This is the frozen configuration used for the Phase 1 baseline.
+# Any changes to model hyperparameters should be reviewed and approved.
+#
+# To verify the pipeline is using this config:
+#   - Tests should confirm config values match expectations
+#   - Changes should be reflected in PR descriptions
+
+# Data configuration
+data:
+  seasons: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+  feature_table: baseline
+
+# Train/test splits
+splits:
+  train_seasons: [2015, 2016, 2017, 2018, 2019, 2020, 2021]
+  validation_season: 2022
+  test_season: 2023
+
+# Model hyperparameters
+models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 1000
+    random_state: 42
+
+  gradient_boosting:
+    n_estimators: 100
+    max_depth: 3
+    learning_rate: 0.1
+    random_state: 42
+
+  ensemble:
+    weight: 0.7  # GBM weight (0 = all logit, 1 = all GBM)
+
+# Evaluation settings
+evaluation:
+  edge_thresholds: [0.03, 0.05]
+  calibration_bins: 10
+  unit_bet_size: 1.0
+
+# Feature engineering
+features:
+  rolling_windows: [4, 8, 16]
+  baseline_features:
+    - win_rate
+    - pdiff
+    - points_for
+    - points_against
+    - turnover_diff

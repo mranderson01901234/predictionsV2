@@ -1,0 +1,47 @@
+# Phase 1 Sample Metrics Snapshot
+#
+# These are the expected metrics when running the sample pipeline.
+# Used for regression testing to ensure pipeline changes don't degrade performance.
+#
+# Last updated: 2024-01-01 (initial baseline)
+#
+# Tolerance windows:
+#   - accuracy: +/- 0.10 (sample data is small, so more variance expected)
+#   - brier_score: +/- 0.10
+#   - log_loss: +/- 0.15
+
+# Expected values for sample pipeline
+sample_baseline:
+  # Note: These values are initialized to reasonable ranges for sample data
+  # They will be updated after the first successful pipeline run
+  accuracy:
+    expected: 0.50
+    tolerance: 0.20  # Wide tolerance for small sample
+    min: 0.30
+    max: 0.70
+  brier_score:
+    expected: 0.25
+    tolerance: 0.10
+    min: 0.10
+    max: 0.35
+  log_loss:
+    expected: 0.70
+    tolerance: 0.15
+    min: 0.40
+    max: 1.00
+
+# Sanity check ranges (these should NEVER be violated)
+sanity_checks:
+  accuracy:
+    min: 0.0
+    max: 1.0
+  brier_score:
+    min: 0.0
+    max: 1.0
+  log_loss:
+    min: 0.0
+    max: 10.0  # Should never exceed this
+  n_train:
+    min: 10  # Sample should have at least this many training games
+  n_test:
+    min: 4   # Sample should have at least this many test games

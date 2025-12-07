@@ -28,6 +28,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Run sample pipeline (smoke test)
+      run: |
+        python -m orchestration.pipelines.phase1_sample_pipeline
+
     - name: Run tests
       run: |
         pytest -q

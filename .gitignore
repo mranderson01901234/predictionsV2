@@ -14,7 +14,9 @@ __pycache__/
 
 # Data artifacts (keep only tiny samples explicitly committed)
 data/**
-!data/sample/**
+!data/nfl/
+!data/nfl/sample/
+!data/nfl/sample/**
 
 # Model artifacts
 models/artifacts/**

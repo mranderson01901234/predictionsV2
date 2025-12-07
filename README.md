@@ -11,16 +11,20 @@ A market-aware, data-rich, multi-sport prediction engine designed to identify ed
 ### Installation
 
 ```bash
-pip install -r requirements.txt
+make setup
 ```
+
+This creates a virtual environment and installs all dependencies.
 
 ### Run Phase 1A Pipeline
 
 ```bash
-# Option 1: Using nflverse (if odds data available)
-python -m ingestion.nfl.run_phase1a
+make phase1a
+```
 
-# Option 2: Using CSV file with odds data
+Or with a custom odds CSV file:
+
+```bash
 python -m ingestion.nfl.run_phase1a --odds-csv data/nfl/raw/odds.csv
 ```
 
@@ -37,18 +41,51 @@ This creates a CSV template at `data/nfl/raw/odds_template.csv` that you can fil
 ### Run Tests
 
 ```bash
+make test
+```
+
+Or run specific tests:
+
+```bash
 pytest tests/test_phase1a_ingestion.py -v
 ```
+
+### Quick Smoke Test
+
+For a fast end-to-end test using sample data (no external dependencies required):
+
+```bash
+make setup
+make sample
+make test-sample
+```
+
+This runs the complete Phase 1 pipeline on a small, committed sample dataset (24 games from 6 weeks). Use this to verify the pipeline is working correctly before running on full data.
 
 ## Project Structure
 
 ```
 predictionV2/
-├── config/              # Configuration files
-├── data/                # Data storage (raw, staged, processed)
-├── docs/                # Documentation
+├── config/              # Configuration files (YAML)
+│   ├── data/            # Data source configs
+│   ├── models/          # Model hyperparameter configs
+│   ├── evaluation/      # Backtest and evaluation configs
+│   └── snapshots/       # Frozen metric snapshots for regression tests
+├── data/                # Data storage
+│   └── nfl/
+│       ├── raw/         # Raw ingested data
+│       ├── staged/      # Cleaned and normalized data
+│       ├── processed/   # Feature tables
+│       └── sample/      # Small sample dataset for CI
+├── docs/                # Documentation and reports
+├── eval/                # Evaluation and metrics modules
+├── features/            # Feature engineering modules
 ├── ingestion/           # Data ingestion modules
-├── tests/               # Test files
+├── models/              # Model architectures and training
+├── orchestration/       # Pipeline orchestration
+├── scripts/             # Utility scripts
+├── tests/               # Test suite
+├── Makefile             # Build automation
 └── requirements.txt     # Python dependencies
 ```
 
@@ -75,8 +112,7 @@ See `docs/data_sources.md` for detailed information about:
 Run the complete Phase 1C pipeline:
 
 ```bash
-source venv/bin/activate
-python -m orchestration.pipelines.phase1c_pipeline
+make phase1c
 ```
 
 This will:
@@ -97,8 +133,7 @@ After running the pipeline:
 Run the Phase 1D sanity check pipeline:
 
 ```bash
-source venv/bin/activate
-python -m orchestration.pipelines.phase1d_pipeline
+make phase1d
 ```
 
 This will:
