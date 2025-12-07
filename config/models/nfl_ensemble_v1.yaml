@@ -1,0 +1,59 @@
+# NFL Stacking Ensemble V1 Configuration
+#
+# Combines multiple base models with a meta-learner.
+# Supports logistic regression or MLP meta-models.
+#
+# Usage:
+#   python -m models.training.train_advanced --model ensemble --config config/models/nfl_ensemble_v1.yaml
+
+model_type: stacking_ensemble
+
+# Base models to include (paths to trained model artifacts)
+# If null, will train all models fresh using their default configs
+base_models:
+  logistic:
+    type: logistic_regression
+    config: config/models/nfl_baseline.yaml
+    artifact: models/artifacts/nfl_baseline/logit.pkl
+
+  gbm:
+    type: gradient_boosting
+    config: config/models/nfl_baseline.yaml
+    artifact: models/artifacts/nfl_baseline/gbm.pkl
+
+  ft_transformer:
+    type: ft_transformer
+    config: config/models/nfl_ft_transformer.yaml
+    artifact: null  # Will be trained fresh
+
+  tabnet:
+    type: tabnet
+    config: config/models/nfl_tabnet.yaml
+    artifact: null  # Will be trained fresh
+
+# Meta-model configuration
+meta_model:
+  type: logistic     # Options: logistic, mlp
+  # MLP-specific settings (only used if type=mlp)
+  mlp_hidden_dims: [16, 8]
+  mlp_dropout: 0.1
+  mlp_epochs: 50
+  mlp_learning_rate: 1e-3
+
+# Feature inclusion in stacking
+stacking:
+  include_features: false  # Whether to include original features in meta-model
+  feature_fraction: 0.0    # Fraction of features to include (if include_features=true)
+
+# Feature selection for base models
+features:
+  feature_table: baseline  # Options: baseline, phase2, phase2b
+  feature_groups: null     # null = all features
+
+# Reproducibility
+random_state: 42
+
+# Calibration (applied to ensemble output)
+calibration:
+  enabled: true
+  method: platt        # Options: platt, isotonic

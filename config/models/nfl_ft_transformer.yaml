@@ -1,0 +1,38 @@
+# NFL FT-Transformer Model Configuration
+#
+# FT-Transformer uses a transformer architecture for tabular data.
+# Each feature is tokenized and processed through attention layers.
+#
+# Usage:
+#   python -m models.training.train_advanced --model ft_transformer --config config/models/nfl_ft_transformer.yaml
+
+model_type: ft_transformer
+
+# Model architecture
+architecture:
+  d_model: 64          # Embedding dimension
+  n_heads: 4           # Number of attention heads
+  n_layers: 3          # Number of transformer layers
+  d_ff: 256            # Feedforward layer dimension
+  dropout: 0.1         # Dropout rate
+
+# Training parameters
+training:
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+  batch_size: 64
+  epochs: 100
+  patience: 15         # Early stopping patience
+
+# Feature selection
+features:
+  feature_table: baseline  # Options: baseline, phase2, phase2b
+  feature_groups: null     # null = all features, or list like ["form", "epa"]
+
+# Reproducibility
+random_state: 42
+
+# Calibration (applied after training)
+calibration:
+  enabled: true
+  method: platt        # Options: platt, isotonic
