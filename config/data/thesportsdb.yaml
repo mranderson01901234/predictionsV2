@@ -1,0 +1,19 @@
+# TheSportsDB API Configuration
+# Free tier: Test API key is "123"
+# Premium: Get API key from https://www.thesportsdb.com/api.php
+
+thesportsdb:
+  api_key: "123"  # Default test key. Replace with your premium API key if available
+  base_url: "https://www.thesportsdb.com/api/v1/json"
+  enabled: true  # Set to false to disable API calls
+  
+  # NFL-specific settings
+  nfl:
+    league_id: "4391"  # NFL league ID in TheSportsDB
+    sport: "American Football"
+    
+  # Rate limiting (approximate)
+  rate_limit:
+    requests_per_minute: 10  # Conservative limit for free tier
+    requests_per_day: 1000  # Approximate daily limit
+

@@ -93,7 +93,26 @@ class TabNetModel(BaseModel):
 
         # Set device
         if device == "auto":
-            self.device = "cuda" if torch.cuda.is_available() else "cpu"
+            # Check if CUDA is available and actually usable (not just detected)
+            # Some GPUs (e.g., GTX 1050 with CUDA 6.1) may be detected but incompatible
+            use_cuda = False
+            if torch.cuda.is_available():
+                try:
+                    # Try to create a small tensor on CUDA to verify compatibility
+                    test_tensor = torch.zeros(1).cuda()
+                    # Try a simple operation to ensure CUDA works
+                    _ = test_tensor + 1
+                    use_cuda = True
+                    del test_tensor
+                    torch.cuda.empty_cache()
+                except Exception:
+                    # CUDA not usable (incompatible GPU, driver issues, etc.), fall back to CPU
+                    use_cuda = False
+                    import logging
+                    logger = logging.getLogger(__name__)
+                    logger.warning("CUDA detected but not usable, falling back to CPU")
+            
+            self.device = "cuda" if use_cuda else "cpu"
         else:
             self.device = device
 

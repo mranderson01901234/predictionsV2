@@ -227,9 +227,28 @@ class FTTransformerModel(BaseModel):
 
         # Set device
         if device == "auto":
-            self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            # Check if CUDA is available and actually usable (not just detected)
+            # Some GPUs (e.g., GTX 1050 with CUDA 6.1) may be detected but incompatible
+            use_cuda = False
+            if torch.cuda.is_available():
+                try:
+                    # Try to create a small tensor on CUDA to verify compatibility
+                    test_tensor = torch.zeros(1).cuda()
+                    # Try a simple operation to ensure CUDA works
+                    _ = test_tensor + 1
+                    use_cuda = True
+                    del test_tensor
+                    torch.cuda.empty_cache()
+                except Exception:
+                    # CUDA not usable (incompatible GPU, driver issues, etc.), fall back to CPU
+                    use_cuda = False
+                    logger.warning("CUDA detected but not usable, falling back to CPU")
+            
+            self.device = torch.device("cuda" if use_cuda else "cpu")
         else:
             self.device = torch.device(device)
+        
+        logger.info(f"Using device: {self.device}")
 
         # Will be set during fit
         self.model: Optional[FTTransformerNetwork] = None
@@ -319,7 +338,7 @@ class FTTransformerModel(BaseModel):
 
         # Learning rate scheduler
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-            optimizer, mode='min', factor=0.5, patience=5, verbose=False
+            optimizer, mode='min', factor=0.5, patience=5
         )
 
         # Training loop with early stopping

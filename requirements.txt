@@ -4,6 +4,12 @@
 pandas>=2.0.0
 pyarrow>=12.0.0  # For parquet file support
 
+# HTTP requests (for API integrations)
+requests>=2.31.0
+
+# Web scraping (for NFL.com injury reports)
+beautifulsoup4>=4.12.0
+
 # NFL data sources
 nfl-data-py>=0.3.0  # nflverse Python wrapper
 

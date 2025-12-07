@@ -1,0 +1,50 @@
+# NFL Stacked Ensemble V2 Configuration
+#
+# Combines FT-Transformer and GBM as base learners with logistic regression meta-model.
+# TabNet removed based on audit findings showing minimal contribution.
+#
+# Usage:
+#   python -m models.training.trainer --model stacking_ensemble --config config/models/nfl_stacked_ensemble_v2.yaml --output-dir artifacts/models/nfl_stacked_ensemble_v2
+
+model_type: stacking_ensemble
+
+# Base models to include
+# TabNet removed - showed minimal contribution (coefficient: -0.0022) in v1
+base_models:
+  ft_transformer:
+    type: ft_transformer
+    config: config/models/nfl_ft_transformer.yaml
+    artifact: null  # Will be trained fresh
+
+  gbm:
+    type: gradient_boosting
+    config: config/models/nfl_baseline.yaml
+    artifact: null  # Will be trained fresh
+
+# Meta-model configuration
+meta_model:
+  type: logistic     # Logistic regression meta-model
+  # MLP-specific settings (not used when type=logistic)
+  mlp_hidden_dims: [16, 8]
+  mlp_dropout: 0.1
+  mlp_epochs: 50
+  mlp_learning_rate: 1e-3
+
+# Feature inclusion in stacking
+stacking:
+  include_features: false  # Whether to include original features in meta-model
+  feature_fraction: 0.0    # Fraction of features to include (if include_features=true)
+
+# Feature selection for base models
+features:
+  feature_table: baseline  # Options: baseline, phase2, phase2b
+  feature_groups: null     # null = all features
+
+# Reproducibility
+random_state: 42
+
+# Calibration (applied to ensemble output)
+calibration:
+  enabled: true
+  method: platt        # Options: platt, isotonic
+
