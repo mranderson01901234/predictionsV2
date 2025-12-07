@@ -2,19 +2,40 @@
 
 A market-aware, data-rich, multi-sport prediction engine designed to identify edges versus betting markets. Initially targeting NFL games, with extensibility to other sports.
 
+## Quick Start
+
+### Requirements
+
+- **Python**: >=3.10 (tested on 3.10, 3.11, 3.12)
+- **OS**: Linux or macOS recommended
+
+### Setup
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+## Sanity Check
+
+From a clean clone, verify the setup works:
+
+```bash
+# Run tests
+pytest -q
+
+# Test Phase 1A ingestion CLI
+python -m ingestion.nfl.run_phase1a --help
+
+# Run sample pipeline smoke test (lightweight, uses committed sample data)
+make sample
+pytest tests/test_phase1_sample_pipeline.py -q
+```
+
 ## Project Status
 
 **Phase 1A**: NFL Schedule and Odds Ingestion ✅ Complete
-
-## Quick Start
-
-### Installation
-
-```bash
-make setup
-```
-
-This creates a virtual environment and installs all dependencies.
 
 ### Run Phase 1A Pipeline
 
@@ -50,17 +71,6 @@ Or run specific tests:
 pytest tests/test_phase1a_ingestion.py -v
 ```
 
-### Quick Smoke Test
-
-For a fast end-to-end test using sample data (no external dependencies required):
-
-```bash
-make setup
-make sample
-make test-sample
-```
-
-This runs the complete Phase 1 pipeline on a small, committed sample dataset (24 games from 6 weeks). Use this to verify the pipeline is working correctly before running on full data.
 
 ## Project Structure
 
