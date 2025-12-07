@@ -8,6 +8,11 @@ from pathlib import Path
 from typing import Dict
 import pandas as pd
 import logging
+import sys
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from config.model_version import get_version_info
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -35,8 +40,16 @@ def generate_report(
     
     logger.info(f"Generating report: {output_path}")
     
+    # Get version info
+    version_info = get_version_info(Path(__file__).parent.parent.parent)
+    
     lines = []
     lines.append("# NFL Baseline Model Evaluation Report (Phase 1C)")
+    lines.append("")
+    lines.append("## Version Information")
+    lines.append("")
+    lines.append(f"- **Model Version**: {version_info['model_version']}")
+    lines.append(f"- **Git SHA**: {version_info['git_sha']}")
     lines.append("")
     lines.append("## Dataset")
     lines.append("")
@@ -172,8 +185,16 @@ def generate_phase1d_report(
     
     logger.info(f"Generating Phase 1D report: {output_path}")
     
+    # Get version info
+    version_info = get_version_info(Path(__file__).parent.parent.parent)
+    
     lines = []
     lines.append("# NFL Baseline Model Evaluation Report (Phase 1D)")
+    lines.append("")
+    lines.append("## Version Information")
+    lines.append("")
+    lines.append(f"- **Model Version**: {version_info['model_version']}")
+    lines.append(f"- **Git SHA**: {version_info['git_sha']}")
     lines.append("")
     lines.append("## Sanity Check & Market Baseline Comparison")
     lines.append("")
