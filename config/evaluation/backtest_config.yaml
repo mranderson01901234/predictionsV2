@@ -1,0 +1,17 @@
+# Backtest Configuration
+
+# Feature table selection: "baseline" or "phase2b"
+feature_table: "baseline"  # Options: "baseline", "phase2", "phase2b"
+
+splits:
+  train_seasons: [2015, 2016, 2017, 2018, 2019, 2020, 2021]
+  validation_season: 2022
+  test_season: 2023  # Use last full season
+
+roi:
+  edge_thresholds: [0.03, 0.05]  # Bet when edge >= 3% or 5%
+  unit_bet_size: 1.0  # Unit bet size for ROI calculation
+
+calibration:
+  n_bins: 10  # Number of bins for calibration curve
+

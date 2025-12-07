@@ -1,0 +1,18 @@
+# NFL Baseline Model Configuration
+
+models:
+  logistic_regression:
+    C: 1.0  # Inverse regularization strength
+    max_iter: 1000
+    random_state: 42
+  
+  gradient_boosting:
+    n_estimators: 100
+    max_depth: 3
+    learning_rate: 0.1
+    random_state: 42
+  
+  ensemble:
+    weight: 0.7  # Weight for GBM (0 = all logit, 1 = all GBM)
+    # Weight can be tuned on validation set
+
