@@ -1,0 +1,156 @@
+{
+  "total_games": 272,
+  "correct_predictions": 140,
+  "accuracy": 0.5147058823529411,
+  "mean_spread_error": 9.28784077350499,
+  "median_spread_error": 5.451151459814861,
+  "std_spread_error": 9.231577239415953,
+  "high_confidence_correct": 90,
+  "high_confidence_incorrect": 77,
+  "home_wins_predicted": 178,
+  "home_wins_actual": 110,
+  "home_win_rate_predicted": 0.6544117647058824,
+  "home_win_rate_actual": 0.40441176470588236,
+  "week_accuracy": [
+    {
+      "week": 1,
+      "correct": 9,
+      "total": 16,
+      "accuracy": 0.5625
+    },
+    {
+      "week": 2,
+      "correct": 11,
+      "total": 16,
+      "accuracy": 0.6875
+    },
+    {
+      "week": 3,
+      "correct": 9,
+      "total": 16,
+      "accuracy": 0.5625
+    },
+    {
+      "week": 4,
+      "correct": 9,
+      "total": 16,
+      "accuracy": 0.5625
+    },
+    {
+      "week": 5,
+      "correct": 7,
+      "total": 14,
+      "accuracy": 0.5
+    },
+    {
+      "week": 6,
+      "correct": 9,
+      "total": 15,
+      "accuracy": 0.6
+    },
+    {
+      "week": 7,
+      "correct": 10,
+      "total": 15,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "week": 8,
+      "correct": 9,
+      "total": 13,
+      "accuracy": 0.6923076923076923
+    },
+    {
+      "week": 9,
+      "correct": 10,
+      "total": 14,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "week": 10,
+      "correct": 9,
+      "total": 14,
+      "accuracy": 0.6428571428571429
+    },
+    {
+      "week": 11,
+      "correct": 13,
+      "total": 15,
+      "accuracy": 0.8666666666666667
+    },
+    {
+      "week": 12,
+      "correct": 10,
+      "total": 14,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "week": 13,
+      "correct": 9,
+      "total": 16,
+      "accuracy": 0.5625
+    },
+    {
+      "week": 14,
+      "correct": 8,
+      "total": 14,
+      "accuracy": 0.5714285714285714
+    },
+    {
+      "week": 15,
+      "correct": 2,
+      "total": 16,
+      "accuracy": 0.125
+    },
+    {
+      "week": 16,
+      "correct": 4,
+      "total": 16,
+      "accuracy": 0.25
+    },
+    {
+      "week": 17,
+      "correct": 2,
+      "total": 16,
+      "accuracy": 0.125
+    },
+    {
+      "week": 18,
+      "correct": 0,
+      "total": 16,
+      "accuracy": 0.0
+    }
+  ],
+  "confidence_accuracy": [
+    {
+      "confidence_bin": "<50%",
+      "correct": 0,
+      "total": 0,
+      "accuracy": NaN
+    },
+    {
+      "confidence_bin": "50-60%",
+      "correct": 50,
+      "total": 105,
+      "accuracy": 0.47619047619047616
+    },
+    {
+      "confidence_bin": "60-70%",
+      "correct": 44,
+      "total": 92,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "confidence_bin": "70-80%",
+      "correct": 39,
+      "total": 65,
+      "accuracy": 0.6
+    },
+    {
+      "confidence_bin": "80%+",
+      "correct": 7,
+      "total": 10,
+      "accuracy": 0.7
+    }
+  ]
+}
