@@ -1,3 +1,5 @@
+import { getQBHeadshotSync, preloadQBHeadshots } from './services/qb-headshots';
+
 export interface Game {
     game_id: string;
     season: number;
@@ -158,6 +160,20 @@ export interface Quarterback {
     ints: number;
     epa: number;
     qbr: number;
+}
+
+/**
+ * Enrich QB data with headshot URL from the headshots database
+ * Always prefers the lookup from JSON file over hardcoded values
+ */
+function enrichQBWithHeadshot(qb: Omit<Quarterback, 'headshot_url'> & { headshot_url?: string }): Quarterback {
+    // Always try to get headshot from JSON first, fallback to existing if not found
+    const lookupHeadshot = getQBHeadshotSync(qb.name);
+    const headshot = lookupHeadshot || qb.headshot_url || '';
+    return {
+        ...qb,
+        headshot_url: headshot
+    };
 }
 
 export interface TeamStats {
@@ -327,20 +343,42 @@ export async function getGameDetails(gameId: string) {
 
 export async function getFullGameDetails(gameId: string) {
     await new Promise(resolve => setTimeout(resolve, 300));
+    // Preload QB headshots if not already loaded
+    await preloadQBHeadshots();
+    
     const details = MOCK_GAME_DETAILS[gameId];
+    if (!details) {
+        // Return null if game not found
+        return null;
+    }
+    // Enrich QB data with headshots
+    const enrichedDetails = {
+        ...details,
+        home_qb: enrichQBWithHeadshot(details.home_qb),
+        away_qb: enrichQBWithHeadshot(details.away_qb),
+    };
     const market = MOCK_MARKETS[gameId];
     const prediction = MOCK_PREDICTIONS[gameId];
-    return { ...details, market, prediction };
+    return { ...enrichedDetails, market, prediction };
 }
 
 export async function getAllGameDetails() {
     await new Promise(resolve => setTimeout(resolve, 300));
+    // Preload QB headshots if not already loaded
+    await preloadQBHeadshots();
+    
     const allDetails: Record<string, GameDetail> = {};
     for (const gameId of Object.keys(MOCK_GAME_DETAILS)) {
         const details = MOCK_GAME_DETAILS[gameId];
+        // Enrich QB data with headshots
+        const enrichedDetails = {
+            ...details,
+            home_qb: enrichQBWithHeadshot(details.home_qb),
+            away_qb: enrichQBWithHeadshot(details.away_qb),
+        };
         const market = MOCK_MARKETS[gameId];
         const prediction = MOCK_PREDICTIONS[gameId];
-        allDetails[gameId] = { ...details, market, prediction };
+        allDetails[gameId] = { ...enrichedDetails, market, prediction };
     }
     return allDetails;
 }

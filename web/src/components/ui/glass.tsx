@@ -6,37 +6,36 @@ import { cn } from "@/lib/utils";
 import { LucideIcon } from "lucide-react";
 
 /* ============================================
-   GLASS CARD VARIANTS
+   CARD VARIANTS (Bloomberg Terminal-Grade)
    ============================================ */
 
-type GlassVariant = "default" | "elevated" | "hero" | "rail" | "neon";
+type CardVariant = "primary" | "secondary" | "tertiary" | "default" | "elevated" | "hero";
 
 interface GlassCardProps extends Omit<HTMLMotionProps<"div">, "children"> {
     children: ReactNode;
-    variant?: GlassVariant;
+    variant?: CardVariant;
     className?: string;
     noPadding?: boolean;
     interactive?: boolean;
-    glowOnHover?: boolean;
 }
 
-const variantClasses: Record<GlassVariant, string> = {
+const variantClasses: Record<CardVariant, string> = {
+    primary: "card-primary",
+    secondary: "card-secondary",
+    tertiary: "card-tertiary",
     default: "glass-surface",
     elevated: "glass-surface-elevated",
     hero: "glass-surface-hero",
-    rail: "glass-rail",
-    neon: "glass-card-neon",
 };
 
 export const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(
-    ({ 
-        children, 
-        variant = "default", 
-        className, 
-        noPadding = false, 
+    ({
+        children,
+        variant = "secondary",
+        className,
+        noPadding = false,
         interactive = false,
-        glowOnHover = false,
-        ...props 
+        ...props
     }, ref) => {
         return (
             <motion.div
@@ -44,8 +43,7 @@ export const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(
                 className={cn(
                     variantClasses[variant],
                     !noPadding && "p-4",
-                    interactive && "card-interactive cursor-pointer",
-                    glowOnHover && "hover-glow-blue",
+                    interactive && "cursor-pointer",
                     className
                 )}
                 initial={{ opacity: 0, y: 12 }}
@@ -62,7 +60,7 @@ export const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(
 GlassCard.displayName = "GlassCard";
 
 /* ============================================
-   GLASS CARD HEADER
+   GLASS CARD HEADER (Simplified)
    ============================================ */
 
 interface GlassCardHeaderProps {
@@ -97,13 +95,13 @@ export function GlassCardHeader({
         <div className={cn("flex items-start justify-between mb-4", className)}>
             <div className="flex items-start gap-3">
                 {Icon && (
-                    <div className="p-2 rounded-lg bg-[var(--glass-bg-elevated)] border border-[var(--glass-border)]">
-                        <Icon size={16} className="text-[var(--neon-blue)]" />
+                    <div className="p-1.5 rounded-lg bg-white/5 border border-white/5">
+                        <Icon size={14} className="text-white/50" />
                     </div>
                 )}
                 <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                        <h3 className="text-sm font-semibold text-[var(--foreground)] tracking-tight">
+                        <h3 className="text-sm font-medium text-white/90 tracking-tight">
                             {title}
                         </h3>
                         {badge && (
@@ -113,7 +111,7 @@ export function GlassCardHeader({
                         )}
                     </div>
                     {subtitle && (
-                        <p className="text-[11px] text-[var(--muted-foreground)] mt-0.5">
+                        <p className="text-[11px] text-white/40 mt-0.5">
                             {subtitle}
                         </p>
                     )}
@@ -141,9 +139,9 @@ export function GlassPanel({ children, className }: GlassPanelProps) {
     return (
         <div className={cn(
             "w-full",
-            "bg-[var(--glass-bg)]",
+            "bg-white/[0.02]",
             "backdrop-blur-md",
-            "border-b border-[var(--glass-border)]",
+            "border-b border-white/5",
             className
         )}>
             {children}
@@ -152,15 +150,14 @@ export function GlassPanel({ children, className }: GlassPanelProps) {
 }
 
 /* ============================================
-   NEON VALUE DISPLAY
+   STAT VALUE DISPLAY (Clean, no glow)
    ============================================ */
 
-interface NeonValueProps {
+interface StatValueProps {
     value: string | number;
     label?: string;
     size?: "sm" | "md" | "lg" | "xl";
-    variant?: "blue" | "green" | "purple" | "default";
-    showGlow?: boolean;
+    variant?: "positive" | "negative" | "neutral" | "default";
     className?: string;
 }
 
@@ -172,38 +169,30 @@ const sizeClasses = {
 };
 
 const colorClasses = {
-    blue: "text-[var(--neon-blue)]",
-    green: "text-[var(--neon-green)]",
-    purple: "text-[var(--neon-purple)]",
-    default: "text-[var(--foreground)]",
+    positive: "text-emerald-400",
+    negative: "text-red-400",
+    neutral: "text-white/60",
+    default: "text-white/90",
 };
 
-const glowClasses = {
-    blue: "text-neon-blue",
-    green: "text-neon-green",
-    purple: "text-neon-purple",
-    default: "",
-};
-
-export function NeonValue({
+export function StatValue({
     value,
     label,
     size = "md",
-    variant = "blue",
-    showGlow = true,
+    variant = "default",
     className,
-}: NeonValueProps) {
+}: StatValueProps) {
     return (
         <div className={cn("flex flex-col", className)}>
             <span className={cn(
-                "hero-number",
+                "font-mono font-bold",
                 sizeClasses[size],
-                showGlow ? glowClasses[variant] : colorClasses[variant]
+                colorClasses[variant]
             )}>
                 {value}
             </span>
             {label && (
-                <span className="text-[10px] uppercase tracking-wider text-[var(--muted-foreground)] mt-1 font-medium">
+                <span className="text-[10px] uppercase tracking-wider text-white/40 mt-1">
                     {label}
                 </span>
             )}
@@ -211,8 +200,11 @@ export function NeonValue({
     );
 }
 
+// Legacy export for backwards compatibility
+export const NeonValue = StatValue;
+
 /* ============================================
-   GLASS STAT BOX
+   STAT BOX (Minimal)
    ============================================ */
 
 interface GlassStatBoxProps {
@@ -232,23 +224,22 @@ export function GlassStatBox({
 }: GlassStatBoxProps) {
     return (
         <div className={cn(
-            "glass-inner p-3 text-center",
+            "p-3 text-center bg-white/[0.02] rounded-lg border border-white/5",
             className
         )}>
-            <div className="text-[9px] text-[var(--muted-foreground)] uppercase font-medium tracking-wide mb-1">
+            <div className="text-[9px] text-white/40 uppercase tracking-wide mb-1">
                 {label}
             </div>
             <div className={cn(
                 "text-lg font-bold font-mono",
-                trend === "up" && "text-[var(--neon-green)]",
-                trend === "down" && "text-[var(--destructive)]",
-                trend === "neutral" && "text-[var(--foreground)]",
-                !trend && "text-[var(--foreground)]"
+                trend === "up" && "text-emerald-400",
+                trend === "down" && "text-red-400",
+                !trend && "text-white/90"
             )}>
                 {value}
             </div>
             {subValue && (
-                <div className="text-[10px] text-[var(--muted-foreground)] mt-0.5">
+                <div className="text-[10px] text-white/40 mt-0.5">
                     {subValue}
                 </div>
             )}
@@ -257,7 +248,7 @@ export function GlassStatBox({
 }
 
 /* ============================================
-   AI INSIGHT CARD
+   AI INSIGHT (Simple list item)
    ============================================ */
 
 interface AIInsightProps {
@@ -267,22 +258,10 @@ interface AIInsightProps {
     className?: string;
 }
 
-const insightTypeStyles = {
-    insight: {
-        icon: "ai-indicator",
-        border: "border-l-[var(--neon-blue)]",
-        bg: "bg-[var(--neon-blue-muted)]",
-    },
-    alert: {
-        icon: "",
-        border: "border-l-[var(--warning)]",
-        bg: "bg-[var(--warning-muted)]",
-    },
-    momentum: {
-        icon: "",
-        border: "border-l-[var(--neon-purple)]",
-        bg: "bg-[var(--neon-purple-muted)]",
-    },
+const insightBorderColors = {
+    insight: "border-l-blue-400",
+    alert: "border-l-amber-400",
+    momentum: "border-l-purple-400",
 };
 
 export function AIInsight({
@@ -291,35 +270,26 @@ export function AIInsight({
     type = "insight",
     className,
 }: AIInsightProps) {
-    const styles = insightTypeStyles[type];
-    
     return (
         <div className={cn(
-            "glass-inner p-3 border-l-2",
-            styles.border,
+            "pl-3 border-l-2",
+            insightBorderColors[type],
             className
         )}>
-            <div className="flex items-start gap-2">
-                {type === "insight" && (
-                    <span className={styles.icon} />
-                )}
-                <div className="flex-1 min-w-0">
-                    <p className="ai-insight-text">
-                        {message}
-                    </p>
-                    {timestamp && (
-                        <span className="text-[10px] text-[var(--muted-foreground)] mt-1 block">
-                            {timestamp}
-                        </span>
-                    )}
-                </div>
-            </div>
+            <p className="text-sm text-white/70 leading-relaxed">
+                {message}
+            </p>
+            {timestamp && (
+                <span className="text-[10px] text-white/30 mt-1 block">
+                    {timestamp}
+                </span>
+            )}
         </div>
     );
 }
 
 /* ============================================
-   GLASS DIVIDER
+   GLASS DIVIDER (Subtle)
    ============================================ */
 
 interface GlassDividerProps {
@@ -330,14 +300,16 @@ interface GlassDividerProps {
 export function GlassDivider({ className, glow = false }: GlassDividerProps) {
     return (
         <div className={cn(
-            glow ? "section-divider" : "h-px bg-[var(--glass-border)]",
+            glow
+                ? "h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
+                : "h-px bg-white/5",
             className
         )} />
     );
 }
 
 /* ============================================
-   CONFIDENCE METER
+   CONFIDENCE METER (Clean)
    ============================================ */
 
 interface ConfidenceMeterProps {
@@ -354,26 +326,26 @@ export function ConfidenceMeter({
     className,
 }: ConfidenceMeterProps) {
     const clampedValue = Math.max(0, Math.min(100, value));
-    
+
     return (
         <div className={cn("space-y-1.5", className)}>
             {(label || showValue) && (
                 <div className="flex items-center justify-between">
                     {label && (
-                        <span className="text-[10px] text-[var(--muted-foreground)] uppercase tracking-wide font-medium">
+                        <span className="text-[10px] text-white/40 uppercase tracking-wide">
                             {label}
                         </span>
                     )}
                     {showValue && (
-                        <span className="text-xs font-mono font-semibold text-[var(--neon-blue)]">
+                        <span className="text-xs font-mono font-semibold text-white/70">
                             {clampedValue}%
                         </span>
                     )}
                 </div>
             )}
-            <div className="confidence-meter">
-                <div 
-                    className="confidence-meter-fill"
+            <div className="h-1 bg-white/5 rounded-full overflow-hidden">
+                <div
+                    className="h-full bg-gradient-to-r from-blue-500 to-emerald-400 rounded-full transition-all duration-500"
                     style={{ width: `${clampedValue}%` }}
                 />
             </div>
@@ -382,7 +354,7 @@ export function ConfidenceMeter({
 }
 
 /* ============================================
-   EDGE INDICATOR
+   EDGE INDICATOR (Subtle)
    ============================================ */
 
 interface EdgeIndicatorProps {
@@ -398,36 +370,34 @@ export function EdgeIndicator({
 }: EdgeIndicatorProps) {
     const isPositive = value > 0;
     const absValue = Math.abs(value);
-    const maxEdge = 10; // Max edge for visualization
+    const maxEdge = 10;
     const percentage = Math.min((absValue / maxEdge) * 50, 50);
-    
+
     return (
         <div className={cn("space-y-2", className)}>
             {label && (
                 <div className="flex items-center justify-between">
-                    <span className="text-[10px] text-[var(--muted-foreground)] uppercase tracking-wide font-medium">
+                    <span className="text-[10px] text-white/40 uppercase tracking-wide">
                         {label}
                     </span>
                     <span className={cn(
                         "text-xs font-mono font-bold",
-                        isPositive ? "text-[var(--neon-green)]" : "text-[var(--destructive)]"
+                        isPositive ? "text-emerald-400" : "text-red-400"
                     )}>
                         {isPositive ? "+" : ""}{value.toFixed(1)}
                     </span>
                 </div>
             )}
-            <div className="edge-bar">
-                <div 
-                    className="absolute top-1/2 left-1/2 -translate-y-1/2 w-0.5 h-3 bg-[var(--glass-border-strong)] rounded"
-                />
+            <div className="h-1 bg-white/5 rounded-full relative">
+                <div className="absolute top-1/2 left-1/2 -translate-y-1/2 w-0.5 h-2 bg-white/20 rounded" />
                 {isPositive ? (
-                    <div 
-                        className="edge-bar-positive"
+                    <div
+                        className="absolute top-0 left-1/2 h-full bg-emerald-400 rounded-full"
                         style={{ width: `${percentage}%` }}
                     />
                 ) : (
-                    <div 
-                        className="edge-bar-negative"
+                    <div
+                        className="absolute top-0 right-1/2 h-full bg-red-400 rounded-full"
                         style={{ width: `${percentage}%` }}
                     />
                 )}
@@ -437,4 +407,3 @@ export function EdgeIndicator({
 }
 
 export default GlassCard;
-

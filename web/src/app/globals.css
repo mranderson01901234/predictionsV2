@@ -253,15 +253,60 @@ body {
 }
 
 /* ============================================
-   GLASSMORPHISM DESIGN SYSTEM
+   GLASSMORPHISM DESIGN SYSTEM v3.0
+   Bloomberg Terminal-Grade with Visual Hierarchy
    ============================================ */
+
+/* === THREE-TIER CARD HIERARCHY === */
+
+/* Tier 1: Primary Cards (Score, Win Prob) - No border, shadow emphasis */
+.card-primary {
+  background: linear-gradient(180deg, #1a1a1a 0%, #141414 100%);
+  border: none;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.card-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Tier 2: Secondary Cards (QB Stats, Market vs Model) */
+.card-secondary {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease;
+}
+
+.card-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Tier 3: Tertiary/Data Cards (Team Statistics) */
+.card-tertiary {
+  background: #151515;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  transition: background 150ms ease;
+}
+
+.card-tertiary:hover {
+  background: #181818;
+}
+
+/* === LEGACY GLASS SURFACES (Updated with subtle borders) === */
 
 /* Base glass surface - subtle transparency */
 .glass-surface {
   background: var(--glass-bg-subtle);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   border-radius: 1rem;
   box-shadow: var(--shadow-glass);
 }
@@ -271,7 +316,7 @@ body {
   background: var(--glass-bg-medium);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--glass-border-medium);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 1rem;
   box-shadow: var(--shadow-glass);
 }
@@ -281,45 +326,41 @@ body {
   background: var(--glass-bg-elevated);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border-medium);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 1rem;
   box-shadow: var(--shadow-glass-elevated);
 }
 
-/* Hero glass surface - premium variant */
+/* Hero glass surface - premium variant with NO accent border */
 .glass-surface-hero {
   background: linear-gradient(
-    135deg,
-    var(--glass-bg-hero) 0%,
-    var(--glass-bg-medium) 50%,
-    var(--glass-bg-elevated) 100%
+    180deg,
+    rgba(26, 26, 26, 1) 0%,
+    rgba(20, 20, 20, 1) 100%
   );
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid var(--glass-border-strong);
+  border: none;
   border-radius: 1.25rem;
-  box-shadow: var(--shadow-glass-hero);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
 }
 
-/* Hero surface with neon accent border */
+/* Hero surface - subtle top gradient accent only */
 .glass-surface-hero::before {
   content: '';
   position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
   background: linear-gradient(
-    135deg,
-    rgba(0, 212, 255, 0.3) 0%,
-    transparent 50%,
-    rgba(168, 85, 247, 0.2) 100%
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
   );
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
   pointer-events: none;
 }
 
@@ -489,6 +530,34 @@ body {
   display: none;
 }
 
+/* Premium dark scrollbar for chat - completely hidden but scrollable */
+.scrollbar-chat {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.scrollbar-chat::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+.scrollbar-chat::-webkit-scrollbar-track {
+  display: none !important;
+  background: transparent !important;
+}
+
+.scrollbar-chat::-webkit-scrollbar-thumb {
+  display: none !important;
+  background: transparent !important;
+}
+
+.scrollbar-chat::-webkit-scrollbar-corner {
+  display: none !important;
+  background: transparent !important;
+}
+
 /* ============================================
    STATUS INDICATORS
    ============================================ */
@@ -654,7 +723,7 @@ body {
   border-color: rgba(0, 255, 136, 0.3);
 }
 
-/* Neon badge/pill styles */
+/* Neon badge/pill styles - toned down for calm confidence */
 .neon-badge {
   display: inline-flex;
   align-items: center;
@@ -668,33 +737,117 @@ body {
 }
 
 .neon-badge-blue {
-  background: var(--neon-blue-muted);
+  background: rgba(77, 184, 217, 0.08);
   color: var(--neon-blue);
-  border: 1px solid rgba(77, 184, 217, 0.2);
+  border: 1px solid rgba(77, 184, 217, 0.15);
 }
 
 .neon-badge-green {
-  background: var(--neon-green-muted);
+  background: rgba(74, 222, 128, 0.08);
   color: var(--neon-green);
-  border: 1px solid rgba(74, 222, 128, 0.2);
+  border: 1px solid rgba(74, 222, 128, 0.15);
 }
 
 .neon-badge-purple {
-  background: var(--neon-purple-muted);
+  background: rgba(167, 139, 250, 0.08);
   color: var(--neon-purple);
-  border: 1px solid rgba(167, 139, 250, 0.2);
+  border: 1px solid rgba(167, 139, 250, 0.15);
 }
 
 .neon-badge-warning {
-  background: var(--warning-muted);
+  background: rgba(251, 191, 36, 0.08);
   color: var(--warning);
-  border: 1px solid rgba(251, 191, 36, 0.2);
+  border: 1px solid rgba(251, 191, 36, 0.15);
 }
 
 .neon-badge-destructive {
-  background: var(--destructive-muted);
+  background: rgba(248, 113, 113, 0.08);
   color: var(--destructive);
-  border: 1px solid rgba(248, 113, 113, 0.2);
+  border: 1px solid rgba(248, 113, 113, 0.15);
+}
+
+/* === EDGE VALUE GLOW EFFECTS === */
+.edge-positive {
+  text-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+}
+
+.edge-negative {
+  text-shadow: 0 0 20px rgba(248, 113, 113, 0.3);
+}
+
+/* Score update pulse animation */
+@keyframes score-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.score-updated {
+  animation: score-pulse 300ms ease;
+}
+
+/* === HORIZONTAL WIN PROBABILITY BAR === */
+.win-prob-bar {
+  position: relative;
+  height: 2rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.win-prob-bar-fill {
+  position: absolute;
+  inset: 0;
+  left: 0;
+  background: linear-gradient(90deg, var(--neon-blue) 0%, #00E5CC 100%);
+  transition: width 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.win-prob-bar-labels {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+/* === MARKET ANALYSIS STRIP === */
+.market-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0.75rem;
+}
+
+.market-strip-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.market-strip-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.market-strip-value {
+  font-size: 1.125rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.market-strip-edge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.2);
 }
 
 /* ============================================

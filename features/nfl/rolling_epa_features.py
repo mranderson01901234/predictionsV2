@@ -245,3 +245,5 @@ if __name__ == "__main__":
     print(f"\nSample features:")
     print(df[["game_id", "team", "off_epa_last3", "off_epa_last5", "def_epa_allowed_last3"]].head(10))
 
+
+

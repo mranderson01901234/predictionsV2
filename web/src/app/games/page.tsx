@@ -10,7 +10,9 @@ export default async function GamesPage() {
     await Promise.all(
         games.map(async (game) => {
             const details = await getFullGameDetails(game.game_id);
-            detailsMap[game.game_id] = details;
+            if (details) {
+                detailsMap[game.game_id] = details;
+            }
         })
     );
 

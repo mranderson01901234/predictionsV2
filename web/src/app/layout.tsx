@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Sidebar } from "@/components/layout/Sidebar";
+import { LayoutWrapper } from "@/components/layout/LayoutWrapper";
 import { CommandPaletteProvider } from "@/components/providers/CommandPaletteProvider";
+import { LayoutProvider } from "@/contexts/LayoutContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,15 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-hidden`}
       >
-        <CommandPaletteProvider>
-          <Sidebar />
-          {/* Main content area - adjusts for sidebar */}
-          <main className="lg:pl-64 min-h-screen transition-all duration-300">
-            {children}
-          </main>
-        </CommandPaletteProvider>
+        <LayoutProvider>
+          <CommandPaletteProvider>
+            <LayoutWrapper>
+              {children}
+            </LayoutWrapper>
+          </CommandPaletteProvider>
+        </LayoutProvider>
       </body>
     </html>
   );

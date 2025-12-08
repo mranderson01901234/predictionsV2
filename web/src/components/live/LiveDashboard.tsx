@@ -3,22 +3,19 @@
 import { useState, useEffect } from "react";
 import { Game, GameDetail } from "@/lib/mock_data";
 import { motion, AnimatePresence } from "framer-motion";
+import { ChatContext } from "@/lib/ai/context-builder";
+import { getPrediction, Prediction } from "@/lib/api/predictions";
 
 // Live Dashboard Components
 import { LiveLayoutShell } from "./LiveLayoutShell";
 import { GameStrip } from "./GameStrip";
-import { HeroGameCard } from "./HeroGameCard";
-import { ScoringSummaryCard } from "./ScoringSummaryCard";
-import { WinProbabilityCard } from "./WinProbabilityCard";
-import { QuarterbackPerformanceCard } from "./QuarterbackPerformanceCard";
-import { PreGameLineCard } from "./PreGameLineCard";
-import { TeamStatsGrid } from "./TeamStatsGrid";
-import { AIIntelligenceRail } from "./AIIntelligenceRail";
-import { 
-    DashboardCardSkeleton, 
-    ChartSkeleton, 
-    QBCardSkeleton 
-} from "./DashboardCard";
+import { DashboardLayout } from "@/components/layout/DashboardLayout";
+
+// New Main Content Components
+import { HeroScore } from "./HeroScore";
+import { KeyStatsStrip } from "./KeyStatsStrip";
+import { QBComparison } from "./QBComparison";
+import { TeamStatistics } from "./TeamStatistics";
 
 interface LiveDashboardProps {
     games: Game[];
@@ -29,19 +26,43 @@ export function LiveDashboard({ games, initialDetails }: LiveDashboardProps) {
     const [selectedGameId, setSelectedGameId] = useState<string>(games[0]?.game_id);
     const [lastUpdated, setLastUpdated] = useState<string>("");
     const [isLoading, setIsLoading] = useState(false);
-    
+    const [apiPrediction, setApiPrediction] = useState<Prediction | null>(null);
+
     const selectedGame = initialDetails[selectedGameId];
+
+    // Fetch real prediction when game changes
+    useEffect(() => {
+        if (!selectedGame) return;
+        const fetchPrediction = async () => {
+            try {
+                const pred = await getPrediction(selectedGame.game_id);
+                setApiPrediction(pred);
+            } catch (error) {
+                // Only log unexpected errors (404s return null, not throw)
+                console.warn("Failed to fetch prediction:", error);
+                setApiPrediction(null);
+            }
+        };
+        fetchPrediction();
+    }, [selectedGame?.game_id]);
+
+    // Build chat context from game details
+    const chatContext: ChatContext | undefined = selectedGame ? {
+        game: selectedGame,
+        prediction: apiPrediction || selectedGame.prediction,
+        userBet: undefined,
+    } : undefined;
 
     // Format last updated time
     useEffect(() => {
         const updateTime = () => {
             const now = new Date();
-            const formatted = now.toLocaleString('en-US', { 
-                month: 'short', 
-                day: 'numeric', 
-                hour: 'numeric', 
+            const formatted = now.toLocaleString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                hour: 'numeric',
                 minute: '2-digit',
-                hour12: true 
+                hour12: true
             });
             setLastUpdated(formatted);
         };
@@ -54,7 +75,6 @@ export function LiveDashboard({ games, initialDetails }: LiveDashboardProps) {
     const handleGameSelect = (gameId: string) => {
         setIsLoading(true);
         setSelectedGameId(gameId);
-        // Simulate data fetch
         setTimeout(() => setIsLoading(false), 200);
     };
 
@@ -62,7 +82,7 @@ export function LiveDashboard({ games, initialDetails }: LiveDashboardProps) {
         return (
             <LiveLayoutShell lastUpdated={lastUpdated}>
                 <div className="flex-1 flex items-center justify-center">
-                    <p className="text-[var(--muted-foreground)]">No games available</p>
+                    <p className="text-white/40">No games available</p>
                 </div>
             </LiveLayoutShell>
         );
@@ -70,94 +90,61 @@ export function LiveDashboard({ games, initialDetails }: LiveDashboardProps) {
 
     return (
         <LiveLayoutShell lastUpdated={lastUpdated}>
-            {/* Game Strip */}
-            <GameStrip
-                games={games}
-                selectedGameId={selectedGameId}
-                onSelect={handleGameSelect}
-            />
+            <DashboardLayout gameContext={chatContext}>
+                <div className="flex h-full w-full">
+                    {/* Left: Vertical Game Strip */}
+                    <GameStrip
+                        games={games}
+                        selectedGameId={selectedGameId}
+                        onSelect={handleGameSelect}
+                    />
 
-            {/* Main Content Area */}
-            <div className="flex-1 overflow-y-auto">
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={selectedGameId}
-                        initial={{ opacity: 0, y: 8 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -8 }}
-                        transition={{ duration: 0.2, ease: "easeOut" }}
-                        className="content-container page-padding py-6"
-                    >
-                        {isLoading ? (
-                            <LoadingSkeleton />
-                        ) : (
-                            <div className="flex flex-col xl:flex-row gap-6">
-                                {/* Main Content Column */}
-                                <div className="flex-1 min-w-0 space-y-6">
-                                    {/* === ZONE 1: HERO === */}
-                                    <section className="zone-hero animate-zone-reveal">
-                                        <HeroGameCard game={selectedGame} />
-                                    </section>
+                    {/* Main Content Area - Fits viewport, no scrolling */}
+                    <div className="flex-1 overflow-hidden min-w-0 flex flex-col">
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={selectedGameId}
+                                initial={{ opacity: 0, y: 8 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -8 }}
+                                transition={{ duration: 0.2, ease: "easeOut" }}
+                                className="flex-1 overflow-hidden min-h-0 flex flex-col"
+                            >
+                                <div className="flex-1 overflow-hidden flex flex-col px-4 py-2 max-w-[1200px] mx-auto w-full">
+                                    {isLoading ? (
+                                        <LoadingSkeleton />
+                                    ) : (
+                                        <div className="flex-1 overflow-hidden flex flex-col gap-2">
+                                        {/* Hero Score */}
+                                        <div className="flex-shrink-0">
+                                            <HeroScore game={selectedGame} />
+                                        </div>
 
-                                    {/* === ZONE 2: ANALYTICS === */}
-                                    <section className="zone-analytics">
-                                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-                                            {/* Left: Scoring Summary + Pre-game Lines */}
-                                            <div className="lg:col-span-3 flex flex-col gap-5">
-                                                <motion.div
-                                                    initial={{ opacity: 0, y: 12 }}
-                                                    animate={{ opacity: 1, y: 0 }}
-                                                    transition={{ delay: 0.1, duration: 0.4 }}
-                                                >
-                                                    <ScoringSummaryCard game={selectedGame} />
-                                                </motion.div>
-                                                <motion.div
-                                                    initial={{ opacity: 0, y: 12 }}
-                                                    animate={{ opacity: 1, y: 0 }}
-                                                    transition={{ delay: 0.15, duration: 0.4 }}
-                                                >
-                                                    <PreGameLineCard game={selectedGame} />
-                                                </motion.div>
+                                        {/* Key Stats Strip */}
+                                        <div className="flex-shrink-0">
+                                            <KeyStatsStrip game={selectedGame} />
+                                        </div>
+
+                                        {/* QB + Detailed Stats - Takes remaining space */}
+                                        <div className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-12 gap-3">
+                                            {/* QB Comparison - Takes 5 columns for premium cards */}
+                                            <div className="lg:col-span-5 overflow-hidden">
+                                                <QBComparison game={selectedGame} />
                                             </div>
 
-                                            {/* Center: Win Probability Chart */}
-                                            <div className="lg:col-span-4">
-                                                <WinProbabilityCard game={selectedGame} />
-                                            </div>
-
-                                            {/* Right: QB Performance */}
-                                            <div className="lg:col-span-5">
-                                                <QuarterbackPerformanceCard
-                                                    homeQB={selectedGame.home_qb}
-                                                    awayQB={selectedGame.away_qb}
-                                                />
+                                            {/* Team Statistics - Takes 7 columns */}
+                                            <div className="lg:col-span-7 overflow-hidden">
+                                                <TeamStatistics game={selectedGame} />
                                             </div>
                                         </div>
-                                    </section>
-
-                                    {/* === ZONE 4: DEEP STATS === */}
-                                    <section className="zone-deep-stats">
-                                        <motion.div
-                                            initial={{ opacity: 0, y: 12 }}
-                                            animate={{ opacity: 1, y: 0 }}
-                                            transition={{ delay: 0.3, duration: 0.4 }}
-                                        >
-                                            <TeamStatsGrid game={selectedGame} />
-                                        </motion.div>
-                                    </section>
+                                        </div>
+                                    )}
                                 </div>
-
-                                {/* === ZONE 3: AI INTELLIGENCE RAIL === */}
-                                <aside className="w-full xl:w-80 xl:flex-shrink-0">
-                                    <div className="xl:sticky xl:top-20">
-                                        <AIIntelligenceRail game={selectedGame} />
-                                    </div>
-                                </aside>
-                            </div>
-                        )}
-                    </motion.div>
-                </AnimatePresence>
-            </div>
+                            </motion.div>
+                        </AnimatePresence>
+                    </div>
+                </div>
+            </DashboardLayout>
         </LiveLayoutShell>
     );
 }
@@ -165,37 +152,20 @@ export function LiveDashboard({ games, initialDetails }: LiveDashboardProps) {
 // Loading skeleton component
 function LoadingSkeleton() {
     return (
-        <div className="flex flex-col xl:flex-row gap-6">
-            {/* Main Column Skeleton */}
-            <div className="flex-1 min-w-0 space-y-6">
-                {/* Hero Skeleton */}
-                <div className="glass-surface-hero p-6 h-[200px] skeleton-shimmer rounded-2xl" />
-                
-                {/* Analytics Skeleton */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-                    <div className="lg:col-span-3 space-y-5">
-                        <DashboardCardSkeleton className="h-[180px]" />
-                        <DashboardCardSkeleton className="h-[140px]" />
-                    </div>
-                    <div className="lg:col-span-4">
-                        <ChartSkeleton className="h-full min-h-[320px]" />
-                    </div>
-                    <div className="lg:col-span-5">
-                        <QBCardSkeleton className="h-full min-h-[320px]" />
-                    </div>
-                </div>
-                
-                {/* Stats Skeleton */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-                    <DashboardCardSkeleton className="h-[300px]" />
-                    <DashboardCardSkeleton className="h-[300px]" />
-                    <DashboardCardSkeleton className="h-[300px]" />
-                </div>
-            </div>
-            
-            {/* AI Rail Skeleton */}
-            <div className="w-full xl:w-80 xl:flex-shrink-0">
-                <div className="glass-rail p-4 h-[500px] skeleton-shimmer rounded-2xl" />
+        <div className="space-y-4">
+            {/* Hero Score Skeleton */}
+            <div className="h-[140px] skeleton-shimmer rounded-2xl" />
+
+            {/* Key Stats Strip Skeleton */}
+            <div className="h-[70px] skeleton-shimmer rounded-xl" />
+
+            {/* QB + Stats Grid Skeleton */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
+                {/* QB Comparison Skeleton */}
+                <div className="lg:col-span-5 h-[300px] skeleton-shimmer rounded-2xl" />
+
+                {/* Team Statistics Skeleton */}
+                <div className="lg:col-span-7 h-[300px] skeleton-shimmer rounded-2xl" />
             </div>
         </div>
     );

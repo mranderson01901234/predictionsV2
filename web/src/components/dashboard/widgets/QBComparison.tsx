@@ -9,22 +9,26 @@ function QBCard({ qb }: { qb: Quarterback }) {
     return (
         <div className="flex flex-col h-full">
             {/* Top Section - Headshot + Name + Key Stats */}
-            <div className="flex items-center gap-3 mb-4">
-                {/* Headshot - Larger */}
+            <div className="flex items-center gap-4 mb-4">
+                {/* Headshot - Large Circular */}
                 <div className="relative flex-shrink-0">
-                    <img
-                        src={qb.headshot_url || ""}
-                        alt={qb.name}
-                        className="w-24 h-24 rounded-lg object-cover border border-[#27272a]"
-                        onError={(e) => {
-                            const target = e.target as HTMLImageElement;
-                            target.style.display = 'none';
-                            const fallback = target.nextElementSibling as HTMLElement;
-                            if (fallback) fallback.style.display = 'flex';
-                        }}
-                    />
-                    <div className="w-24 h-24 rounded-lg bg-zinc-800 border border-[#27272a] flex items-center justify-center text-sm text-zinc-400 hidden absolute inset-0">
-                        {qb.name[0]}
+                    <div className="w-20 h-20 rounded-full bg-zinc-800 border-2 border-[#27272a] overflow-hidden">
+                        {qb.headshot_url ? (
+                            <img
+                                src={qb.headshot_url}
+                                alt={qb.name}
+                                className="w-full h-full object-cover"
+                                onError={(e) => {
+                                    const target = e.target as HTMLImageElement;
+                                    target.style.display = 'none';
+                                    const fallback = target.nextElementSibling as HTMLElement;
+                                    if (fallback) fallback.style.display = 'flex';
+                                }}
+                            />
+                        ) : null}
+                        <div className={`w-full h-full rounded-full bg-zinc-800 flex items-center justify-center text-lg text-zinc-400 ${qb.headshot_url ? 'hidden' : ''}`}>
+                            {qb.name[0]}
+                        </div>
                     </div>
                 </div>
 

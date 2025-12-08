@@ -1,0 +1,647 @@
+[
+  {
+    "player_name": "Aaron Rodgers",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/jdcb4nomlc4rd6k5l6to",
+    "team": "NYJ"
+  },
+  {
+    "player_name": "Adrian Martinez",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/s1yf7b4qpe7pyvwq9ye0",
+    "team": "NYJ"
+  },
+  {
+    "player_name": "Aidan O'Connell",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/aphs7sdbtn8v4zo9pz6w",
+    "team": "LV"
+  },
+  {
+    "player_name": "Andrew Peasley",
+    "headshot_url": "",
+    "team": "NYJ"
+  },
+  {
+    "player_name": "Andy Dalton",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/az1zo7fl2tozg50tgs0d",
+    "team": "CAR"
+  },
+  {
+    "player_name": "Anthony Brown",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wsbie1tqhz6uwtf49tmj",
+    "team": "BUF"
+  },
+  {
+    "player_name": "Anthony Richardson",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/areyvihumylqo7y2ehk2",
+    "team": "IND"
+  },
+  {
+    "player_name": "Austin Reed",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/as3ophwqsfgusvffepv1",
+    "team": "CHI"
+  },
+  {
+    "player_name": "Bailey Zappe",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/m0aps8mb4jev4t4tduir",
+    "team": "CLE"
+  },
+  {
+    "player_name": "Baker Mayfield",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xrbgtbyy8a7l0ux13hjy",
+    "team": "TB"
+  },
+  {
+    "player_name": "Ben DiNucci",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o1gjqpevru8k8d98y2qn",
+    "team": "NO"
+  },
+  {
+    "player_name": "Bo Nix",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zibtvsprpauxnytis229",
+    "team": "DEN"
+  },
+  {
+    "player_name": "Brandon Allen",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xn9eheiy6kty4movmlak",
+    "team": "SF"
+  },
+  {
+    "player_name": "Brett Rypien",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/oogvu5kkkboldowqkfst",
+    "team": "MIN"
+  },
+  {
+    "player_name": "Brock Purdy",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/myvg8siij2bn9ecx7btm",
+    "team": "SF"
+  },
+  {
+    "player_name": "Bryce Young",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/gdmtmmviwadpobyjogal",
+    "team": "CAR"
+  },
+  {
+    "player_name": "C.J. Beathard",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yw8euaevcvwswbx5w27w",
+    "team": "JAX"
+  },
+  {
+    "player_name": "C.J. Stroud",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/fbk2eqpo54lawppgetjn",
+    "team": "HOU"
+  },
+  {
+    "player_name": "Caleb Williams",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/idewrhb7kngpdtrvku31",
+    "team": "CHI"
+  },
+  {
+    "player_name": "Carson Wentz",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/jtwkpwc18ivthztykkc8",
+    "team": "KC"
+  },
+  {
+    "player_name": "Carter Bradley",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/kw2ogega4ojum3hyecya",
+    "team": "LV"
+  },
+  {
+    "player_name": "Case Keenum",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zj2xieg6nctsabgzu65n",
+    "team": "HOU"
+  },
+  {
+    "player_name": "Casey Bauman",
+    "headshot_url": "",
+    "team": "LAC"
+  },
+  {
+    "player_name": "Chris Oladokun",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/l3cx5zsyz0nvwl4ycszo",
+    "team": "KC"
+  },
+  {
+    "player_name": "Clayton Tune",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/bbiianhnrupao5vm4onx",
+    "team": "ARI"
+  },
+  {
+    "player_name": "Cooper Rush",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/amuag2qiwa9veml1lhvs",
+    "team": "DAL"
+  },
+  {
+    "player_name": "Dak Prescott",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xmtaggdnhuyl4pdwtv8j",
+    "team": "DAL"
+  },
+  {
+    "player_name": "Daniel Jones",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zrhniboizqpxtdyz6gez",
+    "team": "MIN"
+  },
+  {
+    "player_name": "Davis Mills",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ednftvn7qywdim05j7u5",
+    "team": "HOU"
+  },
+  {
+    "player_name": "Derek Carr",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/qsz1pyrlu6bmvby6maaf",
+    "team": "NO"
+  },
+  {
+    "player_name": "Deshaun Watson",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/otfs2docj6eahaebo5xn",
+    "team": "CLE"
+  },
+  {
+    "player_name": "Desmond Ridder",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/rhpusa7pfgd82d9ui6y7",
+    "team": "LV"
+  },
+  {
+    "player_name": "Devin Leary",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/srbaw0itijtfo40uzsdt",
+    "team": "BAL"
+  },
+  {
+    "player_name": "Dorian Thompson-Robinson",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ujuyt3hpswlin3aahmhu",
+    "team": "CLE"
+  },
+  {
+    "player_name": "Drake Maye",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/iy96wbyjth5ehizc0xq5",
+    "team": "NE"
+  },
+  {
+    "player_name": "Dresser Winn",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/bebtktnxlirbg8fs8fcy",
+    "team": "LA"
+  },
+  {
+    "player_name": "Drew Lock",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/tlkgzjnuugarxjeoj9vk",
+    "team": "NYG"
+  },
+  {
+    "player_name": "E.J. Perry",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yfyq8swc5hv8odqlvl6n",
+    "team": "JAX"
+  },
+  {
+    "player_name": "Easton Stick",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ybdbylsv4ikjnmwornzo",
+    "team": "LAC"
+  },
+  {
+    "player_name": "Emory Jones",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/wnvgzvxnpu8sc53apmsc",
+    "team": "ATL"
+  },
+  {
+    "player_name": "Gardner Minshew",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zn2kvriijuixffqfx7ob",
+    "team": "LV"
+  },
+  {
+    "player_name": "Gavin Hardison",
+    "headshot_url": "",
+    "team": "MIA"
+  },
+  {
+    "player_name": "Geno Smith",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/izkm5yyxybb5uy5dkcgf",
+    "team": "SEA"
+  },
+  {
+    "player_name": "Hendon Hooker",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ym5l2he8pycechphzse6",
+    "team": "DET"
+  },
+  {
+    "player_name": "Ian Book",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/gfizehze3lahkqm40vk4",
+    "team": "PHI"
+  },
+  {
+    "player_name": "J.J. McCarthy",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/t4ncswnffrpzp0jtldmx",
+    "team": "MIN"
+  },
+  {
+    "player_name": "Jack Plummer",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/dg49og3tpz8gzkiisdt9",
+    "team": "CAR"
+  },
+  {
+    "player_name": "Jacoby Brissett",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/dps7iuuc2zwl68yppqux",
+    "team": "NE"
+  },
+  {
+    "player_name": "Jake Browning",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/kuxgw7azlwgyv2ptawvf",
+    "team": "CIN"
+  },
+  {
+    "player_name": "Jake Fromm",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/i1dr9fc5smv3zpvygqil",
+    "team": "DET"
+  },
+  {
+    "player_name": "Jake Haener",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/wugesxgiiuzs6fdymp57",
+    "team": "NO"
+  },
+  {
+    "player_name": "Jake Luton",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/krvobstakocdgp3puv0g",
+    "team": "LV"
+  },
+  {
+    "player_name": "Jalen Hurts",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/k2p5yb4qmqwoo3qcapgt",
+    "team": "PHI"
+  },
+  {
+    "player_name": "Jameis Winston",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/chdeosreuupotgq0eqlm",
+    "team": "CLE"
+  },
+  {
+    "player_name": "Jared Goff",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/jxyaiwwkabzmmphouxil",
+    "team": "DET"
+  },
+  {
+    "player_name": "Jaren Hall",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ki7jq97gzu1dv16hi4jq",
+    "team": "SEA"
+  },
+  {
+    "player_name": "Jarrett Stidham",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ydf4deab7bxkpjztpze5",
+    "team": "DEN"
+  },
+  {
+    "player_name": "Jason Bean",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zxxuqmmnjevwu2vmzwez",
+    "team": "IND"
+  },
+  {
+    "player_name": "Jayden Daniels",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/mh9rkwpmq1rgfarg9rpm",
+    "team": "WAS"
+  },
+  {
+    "player_name": "Jeff Driskel",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/qvyjv4da7ya6erhqx67m",
+    "team": "WAS"
+  },
+  {
+    "player_name": "Jimmy Garoppolo",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/lbyjizqecoq4onrgectw",
+    "team": "LA"
+  },
+  {
+    "player_name": "Joe Burrow",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jzzqz5ubkilrn9dpxtlp",
+    "team": "CIN"
+  },
+  {
+    "player_name": "Joe Flacco",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/yxvyoeojkif7tnfviamc",
+    "team": "IND"
+  },
+  {
+    "player_name": "Joe Milton III",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/x1c3tu0bkgqokripa885",
+    "team": "NE"
+  },
+  {
+    "player_name": "John Paddock",
+    "headshot_url": "",
+    "team": "ATL"
+  },
+  {
+    "player_name": "John Wolford",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/y6biiyvgepsekqgoqb8i",
+    "team": "JAX"
+  },
+  {
+    "player_name": "Jordan Love",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/a8xqle2vmsnumawdhswb",
+    "team": "GB"
+  },
+  {
+    "player_name": "Jordan Travis",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vmx75tdqnnncihvcxksg",
+    "team": "NYJ"
+  },
+  {
+    "player_name": "Josh Allen",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/lq4ezafbszwwt2qsvhqv",
+    "team": "BUF"
+  },
+  {
+    "player_name": "Josh Johnson",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/gbaye18gptzb1jpyswv8",
+    "team": "BAL"
+  },
+  {
+    "player_name": "Joshua Dobbs",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vjl8nqbcodtgzppwyemb",
+    "team": "SF"
+  },
+  {
+    "player_name": "Justin Fields",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vqcvybvs1vlqhkjvujbg",
+    "team": "PIT"
+  },
+  {
+    "player_name": "Justin Herbert",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vvwim9hpgq1zs3bufmr0",
+    "team": "LAC"
+  },
+  {
+    "player_name": "Kedon Slovis",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/isvdc07rqqvb17apaxf0",
+    "team": "HOU"
+  },
+  {
+    "player_name": "Kenny Pickett",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/lbyu04eubfsgezqftovz",
+    "team": "PHI"
+  },
+  {
+    "player_name": "Kirk Cousins",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/yt6n07jezvfmcsoq0j13",
+    "team": "ATL"
+  },
+  {
+    "player_name": "Kyle Allen",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/knqlp0qrchvv6rjayshv",
+    "team": "PIT"
+  },
+  {
+    "player_name": "Kyle Trask",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/bnraldiwx6rqfbawxkvs",
+    "team": "TB"
+  },
+  {
+    "player_name": "Kyler Murray",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/lsladvvsaptc29bbcah2",
+    "team": "ARI"
+  },
+  {
+    "player_name": "Lamar Jackson",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/cruqs6qpbykh7a2whd7p",
+    "team": "BAL"
+  },
+  {
+    "player_name": "Logan Woodside",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/hf5rgpjctslpwjzl0er9",
+    "team": "CIN"
+  },
+  {
+    "player_name": "Luis Perez",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/elbfiuz2jv1dz5lnq2pw",
+    "team": "LAC"
+  },
+  {
+    "player_name": "Mac Jones",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/pedpdxybeus7mrovsoko",
+    "team": "JAX"
+  },
+  {
+    "player_name": "Malik Willis",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/e6w0hpe2pzefydmhqmr7",
+    "team": "GB"
+  },
+  {
+    "player_name": "Marcus Mariota",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/b9ribxqudeehvmjlw0va",
+    "team": "WAS"
+  },
+  {
+    "player_name": "Mason Rudolph",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/pn938e0z2fobxmzfxmlh",
+    "team": "TEN"
+  },
+  {
+    "player_name": "Matt Corral",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/idekdcxkpymz5exvnkc6",
+    "team": "MIN"
+  },
+  {
+    "player_name": "Matt Ryan",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s6zam4ekrrnonsck6vak",
+    "team": "ATL"
+  },
+  {
+    "player_name": "Matthew Stafford",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xdlnnbapdbk8trxqlasu",
+    "team": "LA"
+  },
+  {
+    "player_name": "Max Duggan",
+    "headshot_url": "",
+    "team": "LAC"
+  },
+  {
+    "player_name": "Michael Penix Jr.",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ono6a9myuvmgmfz1y43t",
+    "team": "ATL"
+  },
+  {
+    "player_name": "Michael Pratt",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/b6yukfgbqhdmfcjzewpy",
+    "team": "TB"
+  },
+  {
+    "player_name": "Mike White",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/fmffqxu8o4ckhspqd8vm",
+    "team": "BUF"
+  },
+  {
+    "player_name": "Mitchell Trubisky",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/jetjlsljpb3shogn5grq",
+    "team": "BUF"
+  },
+  {
+    "player_name": "Nate Sudfeld",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/l1acxbghxcms27qi59nq",
+    "team": "DET"
+  },
+  {
+    "player_name": "Nathan Peterman",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/owifll49p0mmsjgf7rhn",
+    "team": "ATL"
+  },
+  {
+    "player_name": "Nathan Rourke",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gpvlwly5mtuimxf5awgj",
+    "team": "NYG"
+  },
+  {
+    "player_name": "Nick Mullens",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xkbzegq3t29ean26xyp0",
+    "team": "MIN"
+  },
+  {
+    "player_name": "PJ Walker",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/rfbfapksdwh1o4othraq",
+    "team": "SEA"
+  },
+  {
+    "player_name": "Patrick Mahomes",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/qrdbvu4iqy7wkqg8jq8d",
+    "team": "KC"
+  },
+  {
+    "player_name": "Rocky Lombardi",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/plodpsgx1rzgnf22posb",
+    "team": "CIN"
+  },
+  {
+    "player_name": "Russell Wilson",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/u36rhg0md8ey3b4khbre",
+    "team": "PIT"
+  },
+  {
+    "player_name": "Sam Darnold",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/agjgfwk9jk9ufoac2vpd",
+    "team": "MIN"
+  },
+  {
+    "player_name": "Sam Ehlinger",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vubjzsj0dowty2bwlj8s",
+    "team": "IND"
+  },
+  {
+    "player_name": "Sam Hartman",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/mj9bvcyihsspmkwcbral",
+    "team": "WAS"
+  },
+  {
+    "player_name": "Sam Howell",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xd9l7dbtwz8bpvygmcab",
+    "team": "SEA"
+  },
+  {
+    "player_name": "Sean Clifford",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ru4qdl0ffm28dvywvc4r",
+    "team": "GB"
+  },
+  {
+    "player_name": "Shane Buechele",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ufr8xg8gnfsnspxsa5ht",
+    "team": "BUF"
+  },
+  {
+    "player_name": "Skylar Thompson",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/pfzzkuppkzuy1obzuf0m",
+    "team": "MIA"
+  },
+  {
+    "player_name": "Spencer Rattler",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xhllpfkd4hrpbwczbca6",
+    "team": "NO"
+  },
+  {
+    "player_name": "Stetson Bennett",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/dorzszcuggyps9ifu7iz",
+    "team": "LA"
+  },
+  {
+    "player_name": "Tanner McKee",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/q0uc1cubsh0rwc4ezuul",
+    "team": "PHI"
+  },
+  {
+    "player_name": "Tanner Mordecai",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/m9perzblplnzzit1mpzb",
+    "team": "SF"
+  },
+  {
+    "player_name": "Taylor Heinicke",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/fz9e0aufjyyo5raclwji",
+    "team": "LAC"
+  },
+  {
+    "player_name": "Teddy Bridgewater",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/q5p8afhezmpvc1xbwibf",
+    "team": "DET"
+  },
+  {
+    "player_name": "Tim Boyle",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/zmfyonfo6ohn5bxqwaxg",
+    "team": "NYG"
+  },
+  {
+    "player_name": "Tommy DeVito",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ntolppjso4da6spe6okt",
+    "team": "NYG"
+  },
+  {
+    "player_name": "Trace McSorley",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gfl6nhrkzshnhcsxfvqy",
+    "team": "WAS"
+  },
+  {
+    "player_name": "Trevor Lawrence",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ftznnho2rk2xzrculbob",
+    "team": "JAX"
+  },
+  {
+    "player_name": "Trevor Siemian",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vmksfbms9zefxezf39sb",
+    "team": "TEN"
+  },
+  {
+    "player_name": "Trey Lance",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/fas0q1ssb3ihak6pduet",
+    "team": "DAL"
+  },
+  {
+    "player_name": "Tua Tagovailoa",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xzdbwt2ezmxk3pjcsr1n",
+    "team": "MIA"
+  },
+  {
+    "player_name": "Tyler Huntley",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ex2ygunvni5o5aabnhbq",
+    "team": "MIA"
+  },
+  {
+    "player_name": "Tyrod Taylor",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xk8e04jdsvigd6fky3uy",
+    "team": "NYJ"
+  },
+  {
+    "player_name": "Tyson Bagent",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/m6ls9t5npcqavk3eoa9c",
+    "team": "CHI"
+  },
+  {
+    "player_name": "Will Grier",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/i4yjdmx9siwbpou4s8km",
+    "team": "DAL"
+  },
+  {
+    "player_name": "Will Levis",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/vr01ufscgtoagtuut9o4",
+    "team": "TEN"
+  },
+  {
+    "player_name": "Zach Wilson",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/okhlne3kgc11gwv4w6s8",
+    "team": "DEN"
+  },
+  {
+    "player_name": "Zack Annexstad",
+    "headshot_url": "",
+    "team": "TB"
+  }
+]

@@ -18,7 +18,7 @@ export function GameRow({ game, market, prediction }: GameRowProps) {
 
     return (
         <Link href={`/games/${game.game_id}`}>
-            <GlassCard hoverEffect className="mb-4 group relative overflow-hidden">
+            <GlassCard interactive className="mb-4 group relative overflow-hidden">
                 {/* Edge Indicator Strip */}
                 {hasEdge && (
                     <div className="absolute left-0 top-0 bottom-0 w-1 bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
