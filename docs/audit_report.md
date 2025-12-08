@@ -404,7 +404,98 @@ The current training pipeline has **solid foundations** (correct temporal splitt
 
 ---
 
-**Report Generated**: 2025-01-XX  
-**Auditor**: AI Assistant  
+**Report Generated**: 2025-01-XX
+**Auditor**: AI Assistant
 **Status**: ✅ Production-ready solution provided
+
+---
+
+## Appendix A: Optimal Prediction Method Analysis (2025-12-08)
+
+### Model Performance Comparison
+
+Based on comprehensive testing across historical and real-world data:
+
+| Model | Historical Test Accuracy | Real-World 2025 | Assessment |
+|-------|-------------------------|------------------|------------|
+| **Gradient Boosting (XGBoost)** | **69.17%** | ~57% | Best performer |
+| Logistic Regression | 67.67% | ~55% | Good baseline |
+| FT-Transformer | 63.53% | ~53% | Needs more data |
+| Stacking Ensemble | 54.88% | ~57% | Underperforming |
+| Simple Ensemble (0.7 GBM + 0.3 LR) | ~68% | ~57% | Good compromise |
+
+### Critical Calibration Issue
+
+Analysis from `results/calibration_diagnosis/calibration_diagnosis.json`:
+
+```
+Raw Model Performance (2025 Weeks 1-13, n=182):
+- Accuracy: 57.69%
+- Brier Score: 0.261
+- AUC-ROC: 0.629
+- ECE: 0.173
+
+Calibrated Model Performance:
+- Accuracy: 57.14% (-0.55%)
+- Brier Score: 0.358 (+37% WORSE)
+- AUC-ROC: 0.612 (-2.7%)
+- ECE: 0.328 (+90% WORSE)
+```
+
+**Conclusion:** Isotonic calibration is HARMING performance. The calibration method is overfitting to validation data.
+
+### Optimal Configuration Recommendation
+
+```yaml
+# Recommended Production Configuration
+primary_model: gradient_boosting
+
+gradient_boosting:
+  n_estimators: 300         # Increase from 100
+  max_depth: 5              # Increase from 3
+  learning_rate: 0.05       # Decrease for more trees
+  early_stopping_rounds: 50 # Add early stopping
+  subsample: 0.8            # Add regularization
+  colsample_bytree: 0.8     # Add regularization
+
+calibration:
+  enabled: false  # DISABLE - hurting performance
+  # Alternative: Use temperature scaling with careful validation
+
+ensemble:
+  method: weighted_average  # Simplify from stacking
+  weights:
+    gbm: 0.65
+    logistic: 0.35
+
+validation:
+  method: walk_forward      # Use walk-forward validation
+  min_train_seasons: 4
+```
+
+### Why Stacking Ensemble Underperforms
+
+1. **Overfitting meta-learner**: Logistic meta-model learns spurious correlations on validation set
+2. **Base model correlation**: FT-Transformer and GBM predictions highly correlated
+3. **Limited signal diversity**: All base models see same features
+4. **Data quantity**: ~2000 games insufficient for complex ensemble
+
+### Recommended Next Steps
+
+1. **Immediate**: Disable calibration, use raw GBM predictions
+2. **Short-term**: Implement hyperparameter tuning with Optuna
+3. **Medium-term**: Add rest days, travel distance, weather features
+4. **Long-term**: Implement walk-forward validation pipeline
+
+### Expected Improvement
+
+| Action | Expected Gain | Effort |
+|--------|---------------|--------|
+| Disable bad calibration | +0.5% | Low |
+| Hyperparameter tuning | +2-4% | Medium |
+| Walk-forward validation | Better estimates | Medium |
+| Feature engineering | +1-2% | High |
+| **Total** | **+3.5-7%** | - |
+
+**Realistic Target**: 57% → **61-64%** accuracy
 
