@@ -1,0 +1,25 @@
+# Rate limiting
+rate_limit:
+  requests_per_second: 2.0  # NGS seems to handle 2/sec fine
+  max_retries: 3
+  retry_delay: 2
+  backoff_multiplier: 2
+
+# Caching
+cache:
+  enabled: true
+  directory: "data/cache"
+  expiry_hours: 1  # During season, refresh hourly for current week
+  historical_expiry_days: 30  # Historical data rarely changes
+
+# Logging
+logging:
+  level: INFO
+  file: "logs/ngs_scraper.log"
+  
+# Output
+output:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  format: "parquet"  # or "csv", "json"
+

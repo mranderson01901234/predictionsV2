@@ -121,6 +121,78 @@ class IsotonicCalibrator:
         return self.calibrator.predict(probs)
 
 
+class TemperatureScaler:
+    """
+    Temperature Scaling for probability calibration.
+    
+    Single-parameter method that scales logits by temperature T:
+    calibrated_prob = sigmoid(logit / T)
+    
+    Temperature T > 1 makes probabilities more conservative (closer to 0.5)
+    Temperature T < 1 makes probabilities more extreme (farther from 0.5)
+    """
+
+    def __init__(self):
+        self.temperature = 1.0
+        self.fitted = False
+
+    def fit(self, probs: np.ndarray, y: np.ndarray) -> 'TemperatureScaler':
+        """
+        Fit the temperature scaler by optimizing temperature parameter.
+        
+        Uses scipy.optimize to find optimal temperature that minimizes
+        negative log-likelihood on calibration data.
+        
+        Args:
+            probs: Raw probabilities from base model (n_samples,)
+            y: True binary labels (n_samples,)
+        """
+        from scipy.optimize import minimize_scalar
+        
+        # Convert probabilities to logits
+        # Clip probabilities to avoid log(0) or log(1)
+        probs_clipped = np.clip(probs, 1e-7, 1 - 1e-7)
+        logits = np.log(probs_clipped / (1 - probs_clipped))
+        
+        def nll(temperature):
+            """Negative log-likelihood for given temperature."""
+            scaled_logits = logits / temperature
+            scaled_probs = 1 / (1 + np.exp(-scaled_logits))
+            scaled_probs = np.clip(scaled_probs, 1e-7, 1 - 1e-7)
+            nll_value = -np.sum(y * np.log(scaled_probs) + (1 - y) * np.log(1 - scaled_probs))
+            return nll_value
+        
+        # Optimize temperature (typically between 0.1 and 10)
+        result = minimize_scalar(nll, bounds=(0.1, 10.0), method='bounded')
+        self.temperature = result.x
+        self.fitted = True
+        
+        logger.debug(f"Temperature scaling: T={self.temperature:.4f}")
+        
+        return self
+
+    def transform(self, probs: np.ndarray) -> np.ndarray:
+        """
+        Apply temperature scaling to probabilities.
+        
+        Args:
+            probs: Raw probabilities (n_samples,)
+        
+        Returns:
+            Calibrated probabilities (n_samples,)
+        """
+        if not self.fitted:
+            raise ValueError("TemperatureScaler not fitted. Call fit() first.")
+        
+        # Convert to logits, scale, convert back
+        probs_clipped = np.clip(probs, 1e-7, 1 - 1e-7)
+        logits = np.log(probs_clipped / (1 - probs_clipped))
+        scaled_logits = logits / self.temperature
+        scaled_probs = 1 / (1 + np.exp(-scaled_logits))
+        
+        return scaled_probs
+
+
 class CalibratedModel(BaseModel):
     """
     Wrapper that adds calibration to any base model.
@@ -130,13 +202,13 @@ class CalibratedModel(BaseModel):
 
     Args:
         base_model: The underlying prediction model
-        method: Calibration method ("platt" or "isotonic")
+        method: Calibration method ("platt", "isotonic", or "temperature")
     """
 
     def __init__(
         self,
         base_model: Optional[BaseModel] = None,
-        method: Literal["platt", "isotonic"] = "platt",
+        method: Literal["platt", "isotonic", "temperature"] = "platt",
     ):
         self.base_model = base_model
         self.method = method
@@ -145,8 +217,10 @@ class CalibratedModel(BaseModel):
             self.calibrator = PlattScaler()
         elif method == "isotonic":
             self.calibrator = IsotonicCalibrator()
+        elif method == "temperature":
+            self.calibrator = TemperatureScaler()
         else:
-            raise ValueError(f"Unknown calibration method: {method}")
+            raise ValueError(f"Unknown calibration method: {method}. Choose from: platt, isotonic, temperature")
 
         self.calibration_fitted = False
 
@@ -319,23 +393,27 @@ def compute_calibration_metrics(
 def calibrate_probabilities(
     probs: np.ndarray,
     y_cal: np.ndarray,
-    method: Literal["platt", "isotonic"] = "platt",
-) -> Tuple[np.ndarray, Union[PlattScaler, IsotonicCalibrator]]:
+    method: Literal["platt", "isotonic", "temperature"] = "platt",
+) -> Tuple[np.ndarray, Union[PlattScaler, IsotonicCalibrator, TemperatureScaler]]:
     """
     Convenience function to calibrate probabilities.
 
     Args:
         probs: Raw probabilities to calibrate
         y_cal: True labels for calibration
-        method: Calibration method
+        method: Calibration method ("platt", "isotonic", or "temperature")
 
     Returns:
         Tuple of (calibrated_probs, fitted_calibrator)
     """
     if method == "platt":
         calibrator = PlattScaler()
-    else:
+    elif method == "isotonic":
         calibrator = IsotonicCalibrator()
+    elif method == "temperature":
+        calibrator = TemperatureScaler()
+    else:
+        raise ValueError(f"Unknown calibration method: {method}")
 
     calibrator.fit(probs, y_cal)
     calibrated = calibrator.transform(probs)

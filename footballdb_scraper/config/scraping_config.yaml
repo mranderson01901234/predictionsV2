@@ -1,0 +1,30 @@
+# FootballDB Scraping Configuration
+
+# Rate limiting
+rate_limiting:
+  min_interval_seconds: 0.3
+  max_interval_seconds: 0.7
+  jitter: true
+
+# Caching
+cache:
+  enabled: true
+  directory: "data/cache/footballdb"
+  expiry_hours: 24
+
+# HTTP settings
+http:
+  timeout_seconds: 30
+  max_retries: 3
+  backoff_factor: 2
+  retry_status_codes: [429, 500, 502, 503, 504]
+
+# User agent
+user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# Output directories
+output:
+  raw: "data/raw/footballdb"
+  processed: "data/processed/footballdb"
+  cache: "data/cache/footballdb"
+

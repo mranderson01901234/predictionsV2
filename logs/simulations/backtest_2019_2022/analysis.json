@@ -1,0 +1,324 @@
+{
+  "overall": {
+    "total_games": 1017,
+    "correct_predictions": 672,
+    "accuracy": 0.6607669616519174,
+    "brier_score": 0.2151818732168951,
+    "log_loss": 0.6193146970742321,
+    "mean_spread_error": 10.280292678889726,
+    "median_spread_error": 7.862399915316847,
+    "std_spread_error": 8.504447784886276,
+    "rmse_spread": 13.339375286736614
+  },
+  "market_comparison": {
+    "market_accuracy": 0.35103244837758113,
+    "market_brier": 0.49281756286517703,
+    "model_vs_market_accuracy_diff": 0.30973451327433627,
+    "model_vs_market_brier_diff": -0.2776356896482819
+  },
+  "roi_results": {
+    "edge_0.03": {
+      "n_bets": "616",
+      "win_rate": 0.6493506493506493,
+      "total_staked": 616.0,
+      "total_profit": 184.0,
+      "roi": 0.2987012987012987,
+      "edge_threshold": 0.03,
+      "avg_edge": 0.4678766772270119
+    },
+    "edge_0.05": {
+      "n_bets": "606",
+      "win_rate": 0.6518151815181518,
+      "total_staked": 606.0,
+      "total_profit": 184.0,
+      "roi": 0.30363036303630364,
+      "edge_threshold": 0.05,
+      "avg_edge": 0.4749744530646559
+    }
+  },
+  "season_metrics": [
+    {
+      "season": "2019",
+      "n_games": 235,
+      "accuracy": 0.6680851063829787,
+      "brier_score": 0.2071738832665239,
+      "correct_predictions": 157,
+      "mean_spread_error": 10.513225526346146
+    },
+    {
+      "season": "2020",
+      "n_games": 251,
+      "accuracy": 0.6772908366533864,
+      "brier_score": 0.21137223244031492,
+      "correct_predictions": 170,
+      "mean_spread_error": 10.307965814034496
+    },
+    {
+      "season": "2021",
+      "n_games": 264,
+      "accuracy": 0.6439393939393939,
+      "brier_score": 0.21996664477593827,
+      "correct_predictions": 170,
+      "mean_spread_error": 11.3759484830531
+    },
+    {
+      "season": "2022",
+      "n_games": 267,
+      "accuracy": 0.6554307116104869,
+      "brier_score": 0.2210804416875747,
+      "correct_predictions": 175,
+      "mean_spread_error": 8.965916992100485
+    }
+  ],
+  "week_metrics": [
+    {
+      "week": "1",
+      "n_games": 59,
+      "accuracy": 0.5932203389830508,
+      "mean_spread_error": 10.218347112649008
+    },
+    {
+      "week": "2",
+      "n_games": 59,
+      "accuracy": 0.7457627118644068,
+      "mean_spread_error": 9.557108584200256
+    },
+    {
+      "week": "3",
+      "n_games": 59,
+      "accuracy": 0.6101694915254238,
+      "mean_spread_error": 9.64651719479798
+    },
+    {
+      "week": "4",
+      "n_games": 57,
+      "accuracy": 0.5964912280701754,
+      "mean_spread_error": 8.79898272792247
+    },
+    {
+      "week": "5",
+      "n_games": 56,
+      "accuracy": 0.625,
+      "mean_spread_error": 10.588834427523949
+    },
+    {
+      "week": "6",
+      "n_games": 52,
+      "accuracy": 0.5961538461538461,
+      "mean_spread_error": 10.129675172952984
+    },
+    {
+      "week": "7",
+      "n_games": 51,
+      "accuracy": 0.7647058823529411,
+      "mean_spread_error": 12.627331487620772
+    },
+    {
+      "week": "8",
+      "n_games": 54,
+      "accuracy": 0.6851851851851852,
+      "mean_spread_error": 9.256770872853087
+    },
+    {
+      "week": "9",
+      "n_games": 52,
+      "accuracy": 0.6730769230769231,
+      "mean_spread_error": 8.568188143039244
+    },
+    {
+      "week": "10",
+      "n_games": 50,
+      "accuracy": 0.48,
+      "mean_spread_error": 11.198459854852889
+    },
+    {
+      "week": "11",
+      "n_games": 53,
+      "accuracy": 0.6792452830188679,
+      "mean_spread_error": 10.912436737829662
+    },
+    {
+      "week": "12",
+      "n_games": 56,
+      "accuracy": 0.75,
+      "mean_spread_error": 9.625576784231564
+    },
+    {
+      "week": "13",
+      "n_games": 55,
+      "accuracy": 0.6727272727272727,
+      "mean_spread_error": 9.699542399667436
+    },
+    {
+      "week": "14",
+      "n_games": 54,
+      "accuracy": 0.7407407407407407,
+      "mean_spread_error": 11.385809077141921
+    },
+    {
+      "week": "15",
+      "n_games": 59,
+      "accuracy": 0.711864406779661,
+      "mean_spread_error": 9.253157675445815
+    },
+    {
+      "week": "16",
+      "n_games": 59,
+      "accuracy": 0.6440677966101694,
+      "mean_spread_error": 11.484810875790114
+    },
+    {
+      "week": "17",
+      "n_games": 58,
+      "accuracy": 0.7241379310344828,
+      "mean_spread_error": 12.552687721731287
+    },
+    {
+      "week": "18",
+      "n_games": 39,
+      "accuracy": 0.5897435897435898,
+      "mean_spread_error": 9.047868692854557
+    },
+    {
+      "week": "19",
+      "n_games": 18,
+      "accuracy": 0.7222222222222222,
+      "mean_spread_error": 10.775240896152354
+    },
+    {
+      "week": "20",
+      "n_games": 11,
+      "accuracy": 0.6363636363636364,
+      "mean_spread_error": 10.812220386841055
+    },
+    {
+      "week": "21",
+      "n_games": 5,
+      "accuracy": 0.4,
+      "mean_spread_error": 12.44581310030114
+    },
+    {
+      "week": "22",
+      "n_games": 1,
+      "accuracy": 0.0,
+      "mean_spread_error": 3.29238575230024
+    }
+  ],
+  "confidence_metrics": [
+    {
+      "confidence_bin": "<50%",
+      "correct": 0,
+      "total": 0,
+      "accuracy": NaN,
+      "mean_spread_error": NaN
+    },
+    {
+      "confidence_bin": "50-60%",
+      "correct": 206,
+      "total": 364,
+      "accuracy": 0.5659340659340659,
+      "mean_spread_error": 9.502982421412657
+    },
+    {
+      "confidence_bin": "60-70%",
+      "correct": 217,
+      "total": 330,
+      "accuracy": 0.6575757575757576,
+      "mean_spread_error": 9.823080213606454
+    },
+    {
+      "confidence_bin": "70-80%",
+      "correct": 213,
+      "total": 285,
+      "accuracy": 0.7473684210526316,
+      "mean_spread_error": 11.231660627542082
+    },
+    {
+      "confidence_bin": "80%+",
+      "correct": 36,
+      "total": 38,
+      "accuracy": 0.9473684210526315,
+      "mean_spread_error": 14.561376413079476
+    }
+  ],
+  "calibration_buckets": [
+    {
+      "bin": 2,
+      "bin_min": 0.1,
+      "bin_max": 0.2,
+      "predicted_freq": 0.19590468889955678,
+      "actual_freq": 0.0,
+      "count": 4,
+      "calibration_error": 0.19590468889955678
+    },
+    {
+      "bin": 3,
+      "bin_min": 0.2,
+      "bin_max": 0.30000000000000004,
+      "predicted_freq": 0.2660215019462915,
+      "actual_freq": 0.26136363636363635,
+      "count": 88,
+      "calibration_error": 0.00465786558265513
+    },
+    {
+      "bin": 4,
+      "bin_min": 0.30000000000000004,
+      "bin_max": 0.4,
+      "predicted_freq": 0.3489732686269023,
+      "actual_freq": 0.3089430894308943,
+      "count": 123,
+      "calibration_error": 0.04003017919600799
+    },
+    {
+      "bin": 5,
+      "bin_min": 0.4,
+      "bin_max": 0.5,
+      "predicted_freq": 0.45366924460170444,
+      "actual_freq": 0.3670212765957447,
+      "count": 188,
+      "calibration_error": 0.08664796800595975
+    },
+    {
+      "bin": 6,
+      "bin_min": 0.5,
+      "bin_max": 0.6000000000000001,
+      "predicted_freq": 0.5472028745987704,
+      "actual_freq": 0.4943181818181818,
+      "count": 176,
+      "calibration_error": 0.05288469278058855
+    },
+    {
+      "bin": 7,
+      "bin_min": 0.6000000000000001,
+      "bin_max": 0.7000000000000001,
+      "predicted_freq": 0.65143097546563,
+      "actual_freq": 0.6376811594202898,
+      "count": 207,
+      "calibration_error": 0.013749816045340202
+    },
+    {
+      "bin": 8,
+      "bin_min": 0.7000000000000001,
+      "bin_max": 0.8,
+      "predicted_freq": 0.7506664712800581,
+      "actual_freq": 0.751269035532995,
+      "count": 197,
+      "calibration_error": 0.0006025642529368103
+    },
+    {
+      "bin": 9,
+      "bin_min": 0.8,
+      "bin_max": 0.9,
+      "predicted_freq": 0.8186382564266333,
+      "actual_freq": 0.9411764705882353,
+      "count": 34,
+      "calibration_error": 0.12253821416160193
+    }
+  ],
+  "home_away": {
+    "home_wins_predicted": 614,
+    "home_wins_actual": 529,
+    "home_win_rate_predicted": 0.6037364798426745,
+    "home_win_rate_actual": 0.52015732546706
+  }
+}

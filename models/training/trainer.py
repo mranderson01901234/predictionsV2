@@ -332,6 +332,17 @@ def train_ft_transformer(
     if isinstance(weight_decay, str):
         weight_decay = float(weight_decay)
     
+    # Determine device (use GPU if available)
+    import torch
+    if torch.cuda.is_available():
+        device = "cuda"
+        logger.info(f"GPU detected: {torch.cuda.get_device_name(0)}")
+        logger.info(f"GPU memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
+    else:
+        device = "cpu"
+        logger.warning("CUDA not available, using CPU (training will be slower)")
+    logger.info(f"Using device: {device}")
+    
     model = FTTransformerModel(
         d_model=arch.get('d_model', 64),
         n_heads=arch.get('n_heads', 4),
@@ -344,6 +355,7 @@ def train_ft_transformer(
         epochs=train_cfg.get('epochs', 100),
         patience=train_cfg.get('patience', 15),
         random_state=config.get('random_state', 42),
+        device=device,  # Explicitly set device
     )
     
     model.fit(X_train, y_train, X_val, y_val)
@@ -385,6 +397,17 @@ def train_tabnet(
     if isinstance(lambda_sparse, str):
         lambda_sparse = float(lambda_sparse)
     
+    # Determine device (use GPU if available)
+    import torch
+    if torch.cuda.is_available():
+        device = "cuda"
+        logger.info(f"GPU detected: {torch.cuda.get_device_name(0)}")
+        logger.info(f"GPU memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
+    else:
+        device = "cpu"
+        logger.warning("CUDA not available, using CPU (training will be slower)")
+    logger.info(f"Using device: {device}")
+    
     model = TabNetModel(
         n_d=arch.get('n_d', 8),
         n_a=arch.get('n_a', 8),
@@ -399,6 +422,7 @@ def train_tabnet(
         epochs=train_cfg.get('epochs', 100),
         patience=train_cfg.get('patience', 15),
         random_state=config.get('random_state', 42),
+        device=device,  # Explicitly set device
     )
     
     model.fit(X_train, y_train, X_val, y_val)
@@ -428,6 +452,15 @@ def train_stacking_ensemble(
     base_models = {}
     base_configs = config.get('base_models', {})
     
+    logger.info(f"Base model configs: {list(base_configs.keys())}")
+    
+    if not base_configs:
+        logger.warning("No base_models in config! Creating default base models...")
+        base_configs = {
+            'logistic': {'type': 'logistic_regression'},
+            'gbm': {'type': 'gradient_boosting'},
+        }
+    
     for name, model_cfg in base_configs.items():
         model_type = model_cfg.get('type')
         artifact_path = model_cfg.get('artifact')
@@ -445,6 +478,8 @@ def train_stacking_ensemble(
                 base_models[name] = FTTransformerModel.load(artifact_path)
             elif model_type == 'tabnet':
                 base_models[name] = TabNetModel.load(artifact_path)
+            else:
+                logger.warning(f"  Unknown model type: {model_type}")
         else:
             # Train new model
             logger.info(f"  Training new {model_type} model")
@@ -454,18 +489,30 @@ def train_stacking_ensemble(
             else:
                 model_config = {}
             
-            if model_type == 'logistic_regression':
-                model = train_logistic_regression(X_train, y_train, model_config, artifacts_dir)
-                base_models[name] = model
-            elif model_type == 'gradient_boosting':
-                model = train_gradient_boosting(X_train, y_train, model_config, artifacts_dir)
-                base_models[name] = model
-            elif model_type == 'ft_transformer':
-                model = train_ft_transformer(X_train, y_train, X_val, y_val, model_config, artifacts_dir)
-                base_models[name] = model
-            elif model_type == 'tabnet':
-                model = train_tabnet(X_train, y_train, X_val, y_val, model_config, artifacts_dir)
-                base_models[name] = model
+            try:
+                if model_type == 'logistic_regression':
+                    model = train_logistic_regression(X_train, y_train, model_config, artifacts_dir)
+                    base_models[name] = model
+                    logger.info(f"  ✓ Trained {name}")
+                elif model_type == 'gradient_boosting':
+                    model = train_gradient_boosting(X_train, y_train, model_config, artifacts_dir)
+                    base_models[name] = model
+                    logger.info(f"  ✓ Trained {name}")
+                elif model_type == 'ft_transformer':
+                    model = train_ft_transformer(X_train, y_train, X_val, y_val, model_config, artifacts_dir)
+                    base_models[name] = model
+                    logger.info(f"  ✓ Trained {name}")
+                elif model_type == 'tabnet':
+                    model = train_tabnet(X_train, y_train, X_val, y_val, model_config, artifacts_dir)
+                    base_models[name] = model
+                    logger.info(f"  ✓ Trained {name}")
+                else:
+                    logger.warning(f"  Unknown model type: {model_type}, skipping")
+            except Exception as e:
+                logger.error(f"  ✗ Error training {name}: {e}")
+                raise
+    
+    logger.info(f"\nCreated {len(base_models)} base models: {list(base_models.keys())}")
     
     # Create and train ensemble
     meta_cfg = config.get('meta_model', {})
@@ -862,6 +909,26 @@ def run_advanced_training_pipeline(
     # Normalize ensemble -> stacking_ensemble
     if model_type == 'ensemble':
         model_type = 'stacking_ensemble'
+    
+    # If no config was loaded but model_type is specified, load default config
+    if not config_path and model_type:
+        project_root = Path(__file__).parent.parent.parent
+        default_configs = {
+            'ft_transformer': project_root / 'config' / 'models' / 'nfl_ft_transformer.yaml',
+            'tabnet': project_root / 'config' / 'models' / 'nfl_tabnet.yaml',
+            'stacking_ensemble': project_root / 'config' / 'models' / 'nfl_stacked_ensemble.yaml',
+        }
+        if model_type in default_configs:
+            default_config_path = default_configs[model_type]
+            if default_config_path.exists():
+                config = load_config(default_config_path)
+                logger.info(f"Loaded default config from: {default_config_path}")
+            else:
+                # Fallback to ensemble_v1 config
+                fallback_config = project_root / 'config' / 'models' / 'nfl_ensemble_v1.yaml'
+                if fallback_config.exists():
+                    config = load_config(fallback_config)
+                    logger.info(f"Loaded fallback config from: {fallback_config}")
     
     logger.info(f"Training model type: {model_type}")
     

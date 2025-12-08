@@ -1,0 +1,142 @@
+{
+  "results": {
+    "base_models": {
+      "logistic_regression": {
+        "test_accuracy": 0.6766917293233082
+      },
+      "gradient_boosting": {
+        "test_accuracy": 0.6917293233082706
+      },
+      "ft_transformer": {
+        "test_accuracy": 0.6353383458646616
+      }
+    },
+    "validation": {
+      "set_name": "validation",
+      "n_games": 267,
+      "accuracy": 0.5655430711610487,
+      "brier_score": 0.2453112275824373,
+      "log_loss": 0.6837264993719672,
+      "calibration_metrics": {
+        "ece": 0.0,
+        "mce": 5.016699912152589e-07,
+        "brier": 0.2453112275824373
+      },
+      "accuracy_by_confidence": [
+        {
+          "bin_min": 0.5,
+          "bin_max": 0.6,
+          "bin_midpoint": 0.55,
+          "n_games": 267,
+          "accuracy": 0.5655430711610487
+        }
+      ],
+      "monotonic": true,
+      "monotonicity_warnings": [],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "104",
+          "win_rate": 0.375,
+          "total_staked": 104.0,
+          "total_profit": -26.0,
+          "roi": -0.25,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.31946802015381476
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "104",
+          "win_rate": 0.375,
+          "total_staked": 104.0,
+          "total_profit": -26.0,
+          "roi": -0.25,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.31946802015381476
+        }
+      }
+    },
+    "test": {
+      "set_name": "test",
+      "n_games": 266,
+      "accuracy": 0.5488721804511278,
+      "brier_score": 0.24282347068325202,
+      "log_loss": 0.6786269340724578,
+      "calibration_metrics": {
+        "ece": 0.0,
+        "mce": 0.015655979783133156,
+        "brier": 0.24282347068325202
+      },
+      "accuracy_by_confidence": [
+        {
+          "bin_min": 0.5,
+          "bin_max": 0.6,
+          "bin_midpoint": 0.55,
+          "n_games": 266,
+          "accuracy": 0.5488721804511278
+        }
+      ],
+      "monotonic": true,
+      "monotonicity_warnings": [],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "103",
+          "win_rate": 0.2912621359223301,
+          "total_staked": 103.0,
+          "total_profit": -43.0,
+          "roi": -0.4174757281553398,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.3341515186447726
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "103",
+          "win_rate": 0.2912621359223301,
+          "total_staked": 103.0,
+          "total_profit": -43.0,
+          "roi": -0.4174757281553398,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.3341515186447726
+        }
+      }
+    }
+  },
+  "success_criteria": {
+    "ensemble_beats_baseline": "False",
+    "all_confidence_tiers_accurate": true,
+    "rest_features_important": null,
+    "test_accuracy_60pct": "False",
+    "baseline_accuracy": 0.629,
+    "ensemble_accuracy": 0.5488721804511278,
+    "improvement": -0.08012781954887216,
+    "tier_details": [
+      {
+        "bin": "50%-60%",
+        "midpoint": 0.55,
+        "accuracy": 0.5488721804511278,
+        "min_required": 0.52,
+        "passes": true
+      }
+    ],
+    "test_accuracy": 0.5488721804511278
+  },
+  "calibration_comparison": {
+    "raw": {
+      "ece": 0.2423036558756225,
+      "mce": 0.5263469643657624,
+      "brier": 0.32757782248159784
+    },
+    "platt": {
+      "ece": 0.0,
+      "mce": 5.016699912152589e-07,
+      "brier": 0.2453112275824373
+    },
+    "isotonic": {
+      "ece": 0.0,
+      "mce": 1.3322676295501878e-15,
+      "brier": 0.24202113429641522
+    },
+    "temperature": {
+      "ece": 0.0004671819251272643,
+      "mce": 0.11935271540509518,
+      "brier": 0.24931912078507215
+    }
+  }
+}

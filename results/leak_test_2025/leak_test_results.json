@@ -1,0 +1,64 @@
+{
+  "test_season": 2025,
+  "test_weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "n_test_games": 182,
+  "performance": {
+    "accuracy": 0.5714285714285714,
+    "brier_score": 0.358083657020228,
+    "log_loss": 1.303941164204436,
+    "mean_calibration_error": 0.21140005266204392
+  },
+  "leakage_audit": {
+    "all_checks_passed": true,
+    "checks": {
+      "no_test_in_train": true,
+      "no_test_in_val": true,
+      "test_is_correct": true,
+      "no_train_test_overlap": true,
+      "no_val_test_overlap": true,
+      "train_before_test": true,
+      "rolling_features_exist": true,
+      "rolling_features_correct": true,
+      "no_post_game_features": true,
+      "reasonable_nan_counts": true,
+      "has_calibration": true,
+      "model_predicts": true
+    },
+    "n_checks": 12,
+    "n_passed": 12
+  },
+  "data_splits": {
+    "train_seasons": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "val_season": 2024,
+    "test_season": 2025,
+    "train_games": 2458,
+    "val_games": 266,
+    "test_games": 182
+  },
+  "timestamp": "2025-12-07T21:19:20.104613"
+}

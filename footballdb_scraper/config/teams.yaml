@@ -1,0 +1,100 @@
+# Team URL slugs for FootballDB
+
+teams:
+  ARI:
+    slug: "arizona-cardinals"
+    name: "Arizona Cardinals"
+  ATL:
+    slug: "atlanta-falcons"
+    name: "Atlanta Falcons"
+  BAL:
+    slug: "baltimore-ravens"
+    name: "Baltimore Ravens"
+  BUF:
+    slug: "buffalo-bills"
+    name: "Buffalo Bills"
+  CAR:
+    slug: "carolina-panthers"
+    name: "Carolina Panthers"
+  CHI:
+    slug: "chicago-bears"
+    name: "Chicago Bears"
+  CIN:
+    slug: "cincinnati-bengals"
+    name: "Cincinnati Bengals"
+  CLE:
+    slug: "cleveland-browns"
+    name: "Cleveland Browns"
+  DAL:
+    slug: "dallas-cowboys"
+    name: "Dallas Cowboys"
+  DEN:
+    slug: "denver-broncos"
+    name: "Denver Broncos"
+  DET:
+    slug: "detroit-lions"
+    name: "Detroit Lions"
+  GB:
+    slug: "green-bay-packers"
+    name: "Green Bay Packers"
+  HOU:
+    slug: "houston-texans"
+    name: "Houston Texans"
+  IND:
+    slug: "indianapolis-colts"
+    name: "Indianapolis Colts"
+  JAX:
+    slug: "jacksonville-jaguars"
+    name: "Jacksonville Jaguars"
+  KC:
+    slug: "kansas-city-chiefs"
+    name: "Kansas City Chiefs"
+  LV:
+    slug: "las-vegas-raiders"
+    name: "Las Vegas Raiders"
+  LAC:
+    slug: "los-angeles-chargers"
+    name: "Los Angeles Chargers"
+  LAR:
+    slug: "los-angeles-rams"
+    name: "Los Angeles Rams"
+  MIA:
+    slug: "miami-dolphins"
+    name: "Miami Dolphins"
+  MIN:
+    slug: "minnesota-vikings"
+    name: "Minnesota Vikings"
+  NE:
+    slug: "new-england-patriots"
+    name: "New England Patriots"
+  NO:
+    slug: "new-orleans-saints"
+    name: "New Orleans Saints"
+  NYG:
+    slug: "new-york-giants"
+    name: "New York Giants"
+  NYJ:
+    slug: "new-york-jets"
+    name: "New York Jets"
+  PHI:
+    slug: "philadelphia-eagles"
+    name: "Philadelphia Eagles"
+  PIT:
+    slug: "pittsburgh-steelers"
+    name: "Pittsburgh Steelers"
+  SF:
+    slug: "san-francisco-49ers"
+    name: "San Francisco 49ers"
+  SEA:
+    slug: "seattle-seahawks"
+    name: "Seattle Seahawks"
+  TB:
+    slug: "tampa-bay-buccaneers"
+    name: "Tampa Bay Buccaneers"
+  TEN:
+    slug: "tennessee-titans"
+    name: "Tennessee Titans"
+  WAS:
+    slug: "washington-commanders"
+    name: "Washington Commanders"
+

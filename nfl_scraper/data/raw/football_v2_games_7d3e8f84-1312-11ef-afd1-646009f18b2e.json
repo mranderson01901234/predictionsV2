@@ -1,0 +1,125 @@
+{
+  "id": "7d3e8f84-1312-11ef-afd1-646009f18b2e",
+  "homeTeam": {
+    "id": "10402310-a47e-10ea-7442-16b633633637",
+    "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/KC",
+    "fullName": "Kansas City Chiefs"
+  },
+  "awayTeam": {
+    "id": "10400325-48de-3d6a-be29-8f829437f4c8",
+    "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BAL",
+    "fullName": "Baltimore Ravens"
+  },
+  "category": "SNF",
+  "date": "2024-09-06",
+  "time": "2024-09-06T00:20:00Z",
+  "broadcastInfo": {
+    "homeNetworkChannels": [
+      "NBC",
+      "TELEMUNDO"
+    ],
+    "awayNetworkChannels": [
+      "NBC",
+      "TELEMUNDO"
+    ],
+    "internationalWatchOptions": [
+      {
+        "countryCode": "CA",
+        "broadcasters": [
+          "CTV",
+          "RDS",
+          "TSN",
+          "DAZN Canada"
+        ]
+      },
+      {
+        "countryCode": "GB",
+        "broadcasters": [
+          "Sky Sports",
+          "Game Pass via DAZN"
+        ]
+      },
+      {
+        "countryCode": "DE",
+        "broadcasters": [
+          "DAZN Germany (OTT)"
+        ]
+      },
+      {
+        "countryCode": "MX",
+        "broadcasters": [
+          "ESPN2",
+          "NFL Game Pass on DAZN"
+        ]
+      },
+      {
+        "countryCode": "FR",
+        "broadcasters": [
+          "beIN 1",
+          "NFL Game Pass on DAZN"
+        ]
+      },
+      {
+        "countryCode": "AU",
+        "broadcasters": [
+          "ESPN",
+          "NFL Game Pass on DAZN"
+        ]
+      },
+      {
+        "countryCode": "BR",
+        "broadcasters": [
+          "ESPN 2",
+          "Disney+",
+          "NFL Game Pass on DAZN"
+        ]
+      }
+    ],
+    "streamingNetworks": [
+      {
+        "hostNetwork": "NBC",
+        "networks": [
+          "NBC"
+        ]
+      },
+      {
+        "hostNetwork": "TELEMUNDO",
+        "networks": [
+          "TELEMUNDO"
+        ]
+      }
+    ],
+    "territory": "NATIONAL"
+  },
+  "gameType": "UNSPECIFIED",
+  "international": false,
+  "neutralSite": false,
+  "venue": {
+    "id": "00081552-5c92-a7d0-fa55-fc0bb887fb88",
+    "name": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City",
+    "country": "USA"
+  },
+  "season": 2024,
+  "seasonType": "REG",
+  "status": "SCHEDULED",
+  "week": 1,
+  "weekType": "REG",
+  "ticketUrl": "https://www.ticketmaster.com/event/0600606EC4174673?utm_source=NFL.com&utm_medium=client&utm_campaign=NFL_LEAGUE&campaign=nfl-sd-iw-sp-2003960",
+  "ticketVendors": [
+    {
+      "vendorName": "lodgingUrl",
+      "ticketUrl": "https://www.marriott.com/search/submitSearch.mi?pageType=advanced&searchType=NearAddress&marriottBrands=CY&showMore=true&destinationAddress.location=GEHA+Field+at+Arrowhead+Stadium&cid=PMO_GLB0003VDI_GLE00095QK_GLF000HKF5"
+    },
+    {
+      "vendorName": "oneBoxUrl",
+      "ticketUrl": "https://www.ticketmaster.com/event/0600606EC4174673?wt.mc_id=NFL_LEAGUE_GOOGLE_ONE_BOX_KC_LINK6&utm_source=NFL.com&utm_medium=client&utm_campaign=NFL_LEAGUE&utm_content=GOOGLE_ONE_BOX_KC_LINK6"
+    },
+    {
+      "vendorName": "ticketmaster",
+      "ticketUrl": "https://www.ticketmaster.com/event/0600606EC4174673?utm_source=NFL.com&utm_medium=client&utm_campaign=NFL_LEAGUE&campaign=nfl-sd-iw-sp-2003960"
+    }
+  ],
+  "extensions": [],
+  "version": 6
+}

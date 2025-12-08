@@ -1,0 +1,515 @@
+{
+  "all_requests": [
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/identity/v3/token",
+      "method": "POST",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "content-type": "application/json",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:48.392689"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/page?path=~%2F_libraries%2Ffooter-v2%2F_footer_default_v2&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.662498"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/football/v2/weeks/date/2025-12-08",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.663737"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Ffooter-v2%2F_general-and-legal&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.803453"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Ffooter-v2%2F_nfl-culture&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.803802"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Ffooter-v2%2F_nfl-ecosystem&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.804110"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Ffooter-v2%2F_media&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.804560"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Ffooter-v2%2F_players&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.804885"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Ffooter-v2%2F_mobile-apps&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.805532"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Ffooter-v2%2F_socials&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.805999"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/experience/v1/teams?season=2025",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:49.806348"
+    },
+    {
+      "type": "request",
+      "url": "https://flags.api.nfl.com/api/v1/flags/",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "x-environment-key": "BcwxmYVpm2p7f6aJXNAoG5",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.216571"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/page?path=~%2F_libraries%2Fheader-v2%2F_header_default_v2&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.340526"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2Fplayers%2Fnav2-players&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.340849"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/football/v2/weeks/date/2025-12-08",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.341148"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Ftop-hat-nav-tagline&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.840537"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Ftop-hat-nav-links&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.841049"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Fprimary-nav-links&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.841560"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Fflexible-nav-links&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.842111"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Foff-site-nav-links&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.843060"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Fquick-links&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.845588"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/experience/v1/teams?season=2025",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.846158"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/content/v1/promos/sitewide-breaking-news-banner",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:51.846692"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Fdropdowns%2Fwatch&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.107338"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Fdropdowns%2Fgames&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.108496"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Fdropdowns%2Fnews&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.109094"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Fdropdowns%2Fteams&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.109576"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Fdropdowns%2Fstats&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.151682"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/football/v2/weeks/date/2025-12-08",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.830191"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/football/v2/experience/weekly-game-details?includeDriveChart=false&includeReplays=true&includeStandings=true&includeTaggedVideos=false&season=2025&type=REG&week=14",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.885439"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/experience/v1/teams?season=2025",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.939487"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/experience/v1/livestreams",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:53.033259"
+    }
+  ],
+  "injury_endpoints": [
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/cms/v1/menu?path=~%2F_libraries%2Fheader-v2%2Fdropdowns%2Fgames&environment=prd",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.108496"
+    },
+    {
+      "type": "request",
+      "url": "https://api.nfl.com/football/v2/experience/weekly-game-details?includeDriveChart=false&includeReplays=true&includeStandings=true&includeTaggedVideos=false&season=2025&type=REG&week=14",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRJZCI6ImU1MzVjN2MwLTgxN2YtNDc3Ni04OTkwLTU2NTU2ZjhiMTkyOCIsImNsaWVudEtleSI6IjRjRlVXNkRtd0pwelQ5TDdMckczcVJBY0FCRzVzMDRnIiwiZGV2aWNlSWQiOiI0MzRlN2I4YS0wNGY1LTQyYjMtOGU2Ny0yNDZmODBhMzA3YzUiLCJpc3MiOiJORkwiLCJwbGFucyI6W3sicGxhbiI6ImZyZWUiLCJleHBpcmF0aW9uRGF0ZSI6IjIwMjYtMTItMDgiLCJzb3VyY2UiOiJORkwiLCJzdGFydERhdGUiOiIyMDI1LTEyLTA4Iiwic3RhdHVzIjoiQUNUSVZFIiwidHJpYWwiOmZhbHNlfV0sIkRpc3BsYXlOYW1lIjoiV0VCX0RFU0tUT1BfREVTS1RPUCIsIk5vdGVzIjoiIiwiZm9ybUZhY3RvciI6IkRFU0tUT1AiLCJsdXJhQXBwS2V5IjoiU1pzNTdkQkdSeGJMNzI4bFZwN0RZUSIsInBsYXRmb3JtIjoiREVTS1RPUCIsInByb2R1Y3ROYW1lIjoiV0VCIiwicm9sZXMiOlsiY29udGVudCIsImV4cGVyaWVuY2UiLCJmb290YmFsbCIsInV0aWxpdGllcyIsInRlYW1zIiwicGxheSIsImxpdmUiLCJpZGVudGl0eSIsIm5nc19zdGF0cyIsInBheW1lbnRzX2FwaSIsIm5nc190cmFja2luZyIsIm5nc19wbGF0Zm9ybSIsIm5nc19jb250ZW50IiwibmdzX2NvbWJpbmUiLCJuZ3NfYWR2YW5jZWRfc3RhdHMiLCJuZmxfcHJvIiwiZWNvbW0iLCJuZmxfaWRfYXBpIiwidXRpbGl0aWVzX2xvY2F0aW9uIiwiaWRlbnRpdHlfb2lkYyIsIm5nc19zc2UiLCJhY2NvdW50cyIsImNvbnNlbnRzIiwic3ViX3BhcnRuZXJzaGlwcyIsImNvbmN1cnJlbmN5Iiwia2V5c3RvcmUiLCJpZF9zZXJ2ZXJfdG9fc2VydmVyIiwiZnJlZSJdLCJuZXR3b3JrVHlwZSI6Im90aGVyIiwiY2l0eSI6ImF0bGFudGEiLCJjb3VudHJ5Q29kZSI6IlVTIiwiZG1hQ29kZSI6IjUyNCIsImhtYVRlYW1zIjpbIjEwNDAwMjAwLWY0MDEtNGU1My01MTc1LTA5NzRlNGYxNmNmNyJdLCJyZWdpb24iOiJHQSIsInppcENvZGUiOiIzMDMwOSIsImJyb3dzZXIiOiJDaHJvbWUiLCJjZWxsdWxhciI6ZmFsc2UsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsImV4cCI6MTc2NTE2MDYyOH0.Gg5QTf8HoQ0URHMgkq6E-lXPil_9U2IWDZyhQ5LCOCI",
+        "referer": "https://www.nfl.com/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "timestamp": "2025-12-07T20:23:52.885439"
+    }
+  ]
+}

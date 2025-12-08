@@ -1,0 +1,35 @@
+{
+  "name": "",
+  "nodes": [],
+  "pageConfigData": {},
+  "currentWeek": {
+    "season": 2025,
+    "seasonType": "REG",
+    "week": 14,
+    "byeTeams": [
+      {
+        "id": "10400750-259b-33ac-eee3-a3852e83cd1f",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/CAR",
+        "fullName": "Carolina Panthers"
+      },
+      {
+        "id": "10403200-69ab-9ea6-5af5-e240fbc08bea",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/NE",
+        "fullName": "New England Patriots"
+      },
+      {
+        "id": "10403410-997c-9c75-256b-3b012f468bd0",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/NYG",
+        "fullName": "New York Giants"
+      },
+      {
+        "id": "10404500-e7cb-7fce-3f10-4eeb269bd179",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/SF",
+        "fullName": "San Francisco 49ers"
+      }
+    ],
+    "dateBegin": "2025-12-03",
+    "dateEnd": "2025-12-10",
+    "weekType": "REG"
+  }
+}

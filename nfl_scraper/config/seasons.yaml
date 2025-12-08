@@ -1,0 +1,26 @@
+# Default seasons to scrape
+default_seasons:
+  start: 2015
+  end: 2024
+
+# Regular season weeks
+regular_season_weeks:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+

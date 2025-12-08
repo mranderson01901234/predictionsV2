@@ -1,0 +1,76 @@
+[
+  {
+    "endpoint": "football/v2/players/patrick-mahomes/stats",
+    "status": "404",
+    "params": {
+      "season": 2024
+    }
+  },
+  {
+    "endpoint": "football/v2/players/patrick-mahomes/stats/career",
+    "status": "404",
+    "params": {}
+  },
+  {
+    "endpoint": "football/v2/players/patrick-mahomes/stats/situational",
+    "status": "404",
+    "params": {
+      "season": 2024
+    }
+  },
+  {
+    "endpoint": "experience/v1/players/patrick-mahomes/stats",
+    "status": "404",
+    "params": {
+      "season": 2024
+    }
+  },
+  {
+    "endpoint": "football/v2/games/7d3e8f84-1312-11ef-afd1-646009f18b2e",
+    "status": "SUCCESS",
+    "type": "dict",
+    "params": {}
+  },
+  {
+    "endpoint": "football/v2/games/7d3e8f84-1312-11ef-afd1-646009f18b2e/stats",
+    "status": "404",
+    "params": {}
+  },
+  {
+    "endpoint": "football/v2/weeks",
+    "status": "404",
+    "params": {
+      "season": 2024,
+      "seasonType": "REG"
+    }
+  },
+  {
+    "endpoint": "football/v2/weeks/date/2024-09-08",
+    "status": "SUCCESS",
+    "type": "dict",
+    "params": {}
+  },
+  {
+    "endpoint": "football/v2/standings",
+    "status": "SUCCESS",
+    "type": "dict",
+    "params": {
+      "season": 2024,
+      "seasonType": "REG"
+    }
+  },
+  {
+    "endpoint": "football/v2/transactions",
+    "status": "404",
+    "params": {
+      "season": 2024
+    }
+  },
+  {
+    "endpoint": "football/v2/transactions/trades",
+    "status": "404",
+    "params": {
+      "season": 2024
+    }
+  }
+]

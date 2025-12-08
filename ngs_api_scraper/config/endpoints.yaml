@@ -1,0 +1,104 @@
+# Next Gen Stats API Endpoints
+# All endpoints are public and require browser-like headers
+
+base_url: "https://nextgenstats.nfl.com/api"
+
+# Required headers for all requests
+headers:
+  Accept: "application/json, text/plain, */*"
+  Accept-Language: "en-US,en;q=0.9"
+  Origin: "https://nextgenstats.nfl.com"
+  Referer: "https://nextgenstats.nfl.com/"
+  User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# Statboard endpoints (player aggregate stats)
+statboards:
+  passing:
+    path: "/statboard/passing"
+    params:
+      season: int      # Required: 2018+
+      seasonType: str  # Required: REG or POST
+      week: int        # Optional: 1-18 (omit for season totals)
+    
+  rushing:
+    path: "/statboard/rushing"
+    params:
+      season: int
+      seasonType: str
+      week: int
+    
+  receiving:
+    path: "/statboard/receiving"
+    params:
+      season: int
+      seasonType: str
+      week: int
+
+# Leaders endpoints (top plays)
+leaders:
+  fastest_ball_carriers:
+    path: "/leaders/speed/ballCarrier"
+    description: "Fastest ball carrier plays"
+    
+  longest_ball_carrier_runs:
+    path: "/leaders/distance/ballCarrier"
+    description: "Longest distance traveled on runs"
+    
+  longest_tackles:
+    path: "/leaders/distance/tackle"
+    description: "Longest distance to make tackle"
+    
+  fastest_sacks:
+    path: "/leaders/time/sack"
+    description: "Fastest time to sack"
+    
+  improbable_completions:
+    path: "/leaders/expectation/completion/season"
+    description: "Lowest completion probability catches"
+    
+  yac_above_expected:
+    path: "/leaders/expectation/yac/season"
+    description: "Most YAC above expectation"
+    
+  remarkable_rushes:
+    path: "/leaders/expectation/ery/season"
+    description: "Most rush yards above expectation"
+
+# Game Center (per-game stats)
+gamecenter:
+  overview:
+    path: "/gamecenter/overview"
+    params:
+      gameId: str  # Format: YYYYMMDDHH (e.g., 2025120711)
+
+# Highlights
+highlights:
+  play_list:
+    path: "/plays/highlights"
+    params:
+      limit: int        # Number of plays (default: 16)
+      season: int       # 2018+
+      seasonType: str   # Optional: REG or POST
+      week: int         # Optional: 1-18 or 'all'
+
+# Charts (pass/route/carry visualizations)
+charts:
+  list:
+    path: "/content/microsite/chart"
+    params:
+      count: int        # Number of charts (default: 12)
+      week: str         # 1-18 or 'all'
+      type: str         # 'pass', 'route', 'carry', or 'all'
+      teamId: str       # Team ID or 'all'
+      esbId: str        # Player ID or 'all'
+      season: int       # 2018+
+      seasonType: str   # Optional: REG or POST
+
+# Data availability
+data_availability:
+  start_season: 2018
+  current_season: 2025
+  season_types: ["REG", "POST"]
+  max_week_regular: 18
+  max_week_post: 4
+

@@ -21,6 +21,8 @@ _FEATURE_TABLE_MAP: Dict[str, str] = {
     "baseline": "game_features_baseline.parquet",
     "phase2": "game_features_phase2.parquet",
     "phase2b": "game_features_phase2b.parquet",
+    "phase3": "game_features_phase3.parquet",  # Phase 1-3 integrated features
+    "full": "game_features_phase3.parquet",  # Alias for phase3
 }
 
 

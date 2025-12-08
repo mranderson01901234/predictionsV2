@@ -1,0 +1,35 @@
+# NFL Team ID mappings for NGS API
+teams:
+  ARI: { id: "3800", name: "Arizona Cardinals" }
+  ATL: { id: "0200", name: "Atlanta Falcons" }
+  BAL: { id: "0325", name: "Baltimore Ravens" }
+  BUF: { id: "0610", name: "Buffalo Bills" }
+  CAR: { id: "0750", name: "Carolina Panthers" }
+  CHI: { id: "0810", name: "Chicago Bears" }
+  CIN: { id: "0920", name: "Cincinnati Bengals" }
+  CLE: { id: "1050", name: "Cleveland Browns" }
+  DAL: { id: "1200", name: "Dallas Cowboys" }
+  DEN: { id: "1400", name: "Denver Broncos" }
+  DET: { id: "1540", name: "Detroit Lions" }
+  GB:  { id: "1800", name: "Green Bay Packers" }
+  HOU: { id: "2120", name: "Houston Texans" }
+  IND: { id: "2200", name: "Indianapolis Colts" }
+  JAX: { id: "2250", name: "Jacksonville Jaguars" }
+  KC:  { id: "2310", name: "Kansas City Chiefs" }
+  LV:  { id: "2520", name: "Las Vegas Raiders" }
+  LAC: { id: "4400", name: "Los Angeles Chargers" }
+  LAR: { id: "2510", name: "Los Angeles Rams" }
+  MIA: { id: "2700", name: "Miami Dolphins" }
+  MIN: { id: "3000", name: "Minnesota Vikings" }
+  NE:  { id: "3200", name: "New England Patriots" }
+  NO:  { id: "3300", name: "New Orleans Saints" }
+  NYG: { id: "3410", name: "New York Giants" }
+  NYJ: { id: "3430", name: "New York Jets" }
+  PHI: { id: "3700", name: "Philadelphia Eagles" }
+  PIT: { id: "3900", name: "Pittsburgh Steelers" }
+  SF:  { id: "4500", name: "San Francisco 49ers" }
+  SEA: { id: "4600", name: "Seattle Seahawks" }
+  TB:  { id: "4900", name: "Tampa Bay Buccaneers" }
+  TEN: { id: "2100", name: "Tennessee Titans" }
+  WAS: { id: "5110", name: "Washington Commanders" }
+

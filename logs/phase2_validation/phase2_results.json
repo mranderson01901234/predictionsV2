@@ -1,0 +1,37 @@
+{
+  "results": {
+    "injury_coverage": {
+      "total_games": 2649,
+      "games_with_injury_data": "2647",
+      "coverage_pct": 99.92449981124952,
+      "status": "PASS"
+    },
+    "injury_data_path": "/home/dp/Documents/predictionV2/logs/phase2_validation/injuries_cache.parquet",
+    "odds_validation": {
+      "api_accessible": true,
+      "games_fetched": 130,
+      "status": "PASS",
+      "key_source": "config/credentials.yaml"
+    },
+    "edge_distribution": {
+      "total_games": 0,
+      "positive_edges": 0,
+      "positive_edge_pct": 0.0,
+      "mean_edge": 0.0,
+      "median_edge": 0.0,
+      "status": "PENDING"
+    },
+    "test": {
+      "accuracy": 0.0,
+      "brier_score": 0.0,
+      "log_loss": 0.0
+    }
+  },
+  "success_criteria": {
+    "injury_coverage_80pct": "True",
+    "injury_features_important": null,
+    "odds_api_works": true,
+    "accuracy_62pct": false,
+    "positive_edge_30pct": false
+  }
+}

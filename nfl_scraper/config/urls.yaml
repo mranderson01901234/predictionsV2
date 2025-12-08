@@ -1,0 +1,40 @@
+base_url: "https://www.nfl.com"
+
+# Injury reports
+injuries:
+  pattern: "/injuries/"
+  # Dropdown allows selecting season (2015-2025) and week (1-18)
+  # Data is loaded dynamically, may need to handle JavaScript
+
+# Player stats
+player_stats:
+  summary: "/players/{player_slug}/stats/"
+  career: "/players/{player_slug}/stats/career"
+  logs: "/players/{player_slug}/stats/logs/{season}/"
+  splits: "/players/{player_slug}/stats/splits/{season}/"
+  situational: "/players/{player_slug}/stats/situational/{season}/"
+
+# Team stats
+team_stats:
+  offense:
+    passing: "/stats/team-stats/offense/passing/{season}/reg/all"
+    rushing: "/stats/team-stats/offense/rushing/{season}/reg/all"
+    receiving: "/stats/team-stats/offense/receiving/{season}/reg/all"
+    scoring: "/stats/team-stats/offense/scoring/{season}/reg/all"
+    downs: "/stats/team-stats/offense/downs/{season}/reg/all"
+  defense:
+    passing: "/stats/team-stats/defense/passing/{season}/reg/all"
+    rushing: "/stats/team-stats/defense/rushing/{season}/reg/all"
+    scoring: "/stats/team-stats/defense/scoring/{season}/reg/all"
+    tackles: "/stats/team-stats/defense/tackles/{season}/reg/all"
+    interceptions: "/stats/team-stats/defense/interceptions/{season}/reg/all"
+    fumbles: "/stats/team-stats/defense/fumbles/{season}/reg/all"
+
+# Transactions
+transactions:
+  trades: "/transactions/league/trades/{season}/{month}"
+  signings: "/transactions/league/signings/{season}/{month}"
+  reserve_list: "/transactions/league/reserve-list/{season}/{month}"
+  waivers: "/transactions/league/waivers/{season}/{month}"
+  terminations: "/transactions/league/terminations/{season}/{month}"
+

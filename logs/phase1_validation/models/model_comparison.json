@@ -1,0 +1,1333 @@
+{
+  "logistic_regression": {
+    "train": {
+      "set_name": "train",
+      "n_games": 1658,
+      "accuracy": 0.6441495778045838,
+      "brier_score": 0.2196560179735178,
+      "log_loss": 0.630804305558257,
+      "mean_calibration_error": 0.14634846777300678,
+      "calibration_buckets": [
+        {
+          "bin": 1,
+          "bin_min": 0.0,
+          "bin_max": 0.1,
+          "predicted_freq": 0.05578852573989688,
+          "actual_freq": 0.3333333333333333,
+          "count": 3,
+          "calibration_error": 0.2775448075934364
+        },
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.16745238084065683,
+          "actual_freq": 0.21875,
+          "count": 32,
+          "calibration_error": 0.051297619159343166
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.2572168873035959,
+          "actual_freq": 0.29523809523809524,
+          "count": 105,
+          "calibration_error": 0.03802120793449937
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.3555862374759866,
+          "actual_freq": 0.328125,
+          "count": 192,
+          "calibration_error": 0.02746123747598661
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.4502217385031976,
+          "actual_freq": 0.4414715719063545,
+          "count": 299,
+          "calibration_error": 0.008750166596843079
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5493097451481345,
+          "actual_freq": 0.5085227272727273,
+          "count": 352,
+          "calibration_error": 0.04078701787540717
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6477776830333972,
+          "actual_freq": 0.6712707182320442,
+          "count": 362,
+          "calibration_error": 0.023493035198646983
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7455888445209086,
+          "actual_freq": 0.7946428571428571,
+          "count": 224,
+          "calibration_error": 0.04905401262194853
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8386467801451382,
+          "actual_freq": 0.8068181818181818,
+          "count": 88,
+          "calibration_error": 0.03182859832695639
+        },
+        {
+          "bin": 10,
+          "bin_min": 0.9,
+          "bin_max": 1.0,
+          "predicted_freq": 0.9152469749470001,
+          "actual_freq": 0.0,
+          "count": 1,
+          "calibration_error": 0.9152469749470001
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "577",
+          "win_rate": 0.36048526863084923,
+          "total_staked": 577.0,
+          "total_profit": -161.0,
+          "roi": -0.27902946273830154,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.20574150940292374
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "550",
+          "win_rate": 0.36,
+          "total_staked": 550.0,
+          "total_profit": -154.0,
+          "roi": -0.28,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.21381703323367152
+        }
+      }
+    },
+    "validation": {
+      "set_name": "validation",
+      "n_games": 267,
+      "accuracy": 0.6591760299625468,
+      "brier_score": 0.22144086943632066,
+      "log_loss": 0.63417766744673,
+      "mean_calibration_error": 0.0508333051399532,
+      "calibration_buckets": [
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.19114319208309805,
+          "actual_freq": 0.0,
+          "count": 1,
+          "calibration_error": 0.19114319208309805
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.25920660159049835,
+          "actual_freq": 0.3333333333333333,
+          "count": 15,
+          "calibration_error": 0.07412673174283496
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.3614307028330545,
+          "actual_freq": 0.34285714285714286,
+          "count": 35,
+          "calibration_error": 0.018573559975911647
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.45317198859280444,
+          "actual_freq": 0.3958333333333333,
+          "count": 48,
+          "calibration_error": 0.05733865525947113
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5505335060349867,
+          "actual_freq": 0.5964912280701754,
+          "count": 57,
+          "calibration_error": 0.045957722035188664
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6463275172217008,
+          "actual_freq": 0.6538461538461539,
+          "count": 52,
+          "calibration_error": 0.007518636624453068
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7392846551037853,
+          "actual_freq": 0.7446808510638298,
+          "count": 47,
+          "calibration_error": 0.005396195960044481
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8267215858947098,
+          "actual_freq": 0.8333333333333334,
+          "count": 12,
+          "calibration_error": 0.006611747438623583
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "97",
+          "win_rate": 0.36082474226804123,
+          "total_staked": 97.0,
+          "total_profit": -27.0,
+          "roi": -0.27835051546391754,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.20295107459021586
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "93",
+          "win_rate": 0.3548387096774194,
+          "total_staked": 93.0,
+          "total_profit": -27.0,
+          "roi": -0.2903225806451613,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.20982632874801294
+        }
+      }
+    },
+    "test": {
+      "set_name": "test",
+      "n_games": 267,
+      "accuracy": 0.6292134831460674,
+      "brier_score": 0.23444689149350592,
+      "log_loss": 0.6629089523867663,
+      "mean_calibration_error": 0.10001456327580223,
+      "calibration_buckets": [
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.17566181572534212,
+          "actual_freq": 0.25,
+          "count": 4,
+          "calibration_error": 0.07433818427465788
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.26235695980498136,
+          "actual_freq": 0.46153846153846156,
+          "count": 13,
+          "calibration_error": 0.1991815017334802
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.3613243848919127,
+          "actual_freq": 0.4666666666666667,
+          "count": 30,
+          "calibration_error": 0.10534228177475397
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.4526440673293422,
+          "actual_freq": 0.34210526315789475,
+          "count": 38,
+          "calibration_error": 0.11053880417144746
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5502215510195692,
+          "actual_freq": 0.532258064516129,
+          "count": 62,
+          "calibration_error": 0.01796348650344015
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6508834138558476,
+          "actual_freq": 0.7313432835820896,
+          "count": 67,
+          "calibration_error": 0.08045986972624197
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7425427617207675,
+          "actual_freq": 0.6410256410256411,
+          "count": 39,
+          "calibration_error": 0.10151712069512642
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8250609716129841,
+          "actual_freq": 0.7142857142857143,
+          "count": 14,
+          "calibration_error": 0.11077525732726978
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "104",
+          "win_rate": 0.36538461538461536,
+          "total_staked": 104.0,
+          "total_profit": -28.0,
+          "roi": -0.2692307692307692,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.1998414887813635
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "102",
+          "win_rate": 0.35294117647058826,
+          "total_staked": 102.0,
+          "total_profit": -30.0,
+          "roi": -0.29411764705882354,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.20290149958733977
+        }
+      }
+    }
+  },
+  "gradient_boosting": {
+    "train": {
+      "set_name": "train",
+      "n_games": 1658,
+      "accuracy": 0.7762364294330518,
+      "brier_score": 0.16046800532715766,
+      "log_loss": 0.49493934758753483,
+      "mean_calibration_error": 0.1085279253019376,
+      "calibration_buckets": [
+        {
+          "bin": 1,
+          "bin_min": 0.0,
+          "bin_max": 0.1,
+          "predicted_freq": 0.07513157278299332,
+          "actual_freq": 0.0,
+          "count": 7,
+          "calibration_error": 0.07513157278299332
+        },
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.15944938361644745,
+          "actual_freq": 0.01818181818181818,
+          "count": 55,
+          "calibration_error": 0.14126756543462926
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.25556325912475586,
+          "actual_freq": 0.04666666666666667,
+          "count": 150,
+          "calibration_error": 0.2088965924580892
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.3515337109565735,
+          "actual_freq": 0.1826086956521739,
+          "count": 230,
+          "calibration_error": 0.16892501530439957
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.45105648040771484,
+          "actual_freq": 0.42366412213740456,
+          "count": 262,
+          "calibration_error": 0.02739235827031028
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5504204630851746,
+          "actual_freq": 0.5615942028985508,
+          "count": 276,
+          "calibration_error": 0.011173739813376216
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6486346125602722,
+          "actual_freq": 0.7619047619047619,
+          "count": 252,
+          "calibration_error": 0.11327014934448965
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7516445517539978,
+          "actual_freq": 0.8789237668161435,
+          "count": 223,
+          "calibration_error": 0.12727921506214568
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8512982130050659,
+          "actual_freq": 0.9880952380952381,
+          "count": 168,
+          "calibration_error": 0.13679702509017222
+        },
+        {
+          "bin": 10,
+          "bin_min": 0.9,
+          "bin_max": 1.0,
+          "predicted_freq": 0.9248539805412292,
+          "actual_freq": 1.0,
+          "count": 35,
+          "calibration_error": 0.07514601945877075
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "570",
+          "win_rate": 0.45789473684210524,
+          "total_staked": 570.0,
+          "total_profit": -48.0,
+          "roi": -0.08421052631578947,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.20893725833935334
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "535",
+          "win_rate": 0.45607476635514016,
+          "total_staked": 535.0,
+          "total_profit": -47.0,
+          "roi": -0.08785046728971962,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.2200152082298737
+        }
+      }
+    },
+    "validation": {
+      "set_name": "validation",
+      "n_games": 267,
+      "accuracy": 0.6367041198501873,
+      "brier_score": 0.23330506326070044,
+      "log_loss": 0.6637295731500293,
+      "mean_calibration_error": 0.11338520241165832,
+      "calibration_buckets": [
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.18381674587726593,
+          "actual_freq": 0.5,
+          "count": 4,
+          "calibration_error": 0.31618325412273407
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.25396010279655457,
+          "actual_freq": 0.34615384615384615,
+          "count": 26,
+          "calibration_error": 0.09219374335729158
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.3602638244628906,
+          "actual_freq": 0.38461538461538464,
+          "count": 39,
+          "calibration_error": 0.024351560152494012
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.4557313919067383,
+          "actual_freq": 0.45,
+          "count": 40,
+          "calibration_error": 0.00573139190673827
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5496312975883484,
+          "actual_freq": 0.6595744680851063,
+          "count": 47,
+          "calibration_error": 0.10994317049675795
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.663475513458252,
+          "actual_freq": 0.6285714285714286,
+          "count": 35,
+          "calibration_error": 0.034904084886823394
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7476247549057007,
+          "actual_freq": 0.6521739130434783,
+          "count": 46,
+          "calibration_error": 0.09545084186222241
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8387200236320496,
+          "actual_freq": 0.7407407407407407,
+          "count": 27,
+          "calibration_error": 0.09797928289130886
+        },
+        {
+          "bin": 10,
+          "bin_min": 0.9,
+          "bin_max": 1.0,
+          "predicted_freq": 0.910396158695221,
+          "actual_freq": 0.6666666666666666,
+          "count": 3,
+          "calibration_error": 0.24372949202855432
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "98",
+          "win_rate": 0.35714285714285715,
+          "total_staked": 98.0,
+          "total_profit": -28.0,
+          "roi": -0.2857142857142857,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.20814948981534284
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "96",
+          "win_rate": 0.3541666666666667,
+          "total_staked": 96.0,
+          "total_profit": -28.0,
+          "roi": -0.2916666666666667,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.2115703397166151
+        }
+      }
+    },
+    "test": {
+      "set_name": "test",
+      "n_games": 267,
+      "accuracy": 0.6067415730337079,
+      "brier_score": 0.2528633384861054,
+      "log_loss": 0.7118352250046052,
+      "mean_calibration_error": 0.1518560685508929,
+      "calibration_buckets": [
+        {
+          "bin": 1,
+          "bin_min": 0.0,
+          "bin_max": 0.1,
+          "predicted_freq": 0.09640653431415558,
+          "actual_freq": 0.0,
+          "count": 1,
+          "calibration_error": 0.09640653431415558
+        },
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.16854003071784973,
+          "actual_freq": 0.5,
+          "count": 4,
+          "calibration_error": 0.33145996928215027
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.25918954610824585,
+          "actual_freq": 0.45454545454545453,
+          "count": 11,
+          "calibration_error": 0.19535590843720868
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.3541475534439087,
+          "actual_freq": 0.4634146341463415,
+          "count": 41,
+          "calibration_error": 0.1092670807024328
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.44725650548934937,
+          "actual_freq": 0.425,
+          "count": 40,
+          "calibration_error": 0.022256505489349376
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5503294467926025,
+          "actual_freq": 0.5909090909090909,
+          "count": 44,
+          "calibration_error": 0.0405796441164884
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6432396769523621,
+          "actual_freq": 0.6744186046511628,
+          "count": 43,
+          "calibration_error": 0.031178927698800707
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7541018724441528,
+          "actual_freq": 0.65,
+          "count": 40,
+          "calibration_error": 0.10410187244415281
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8364900350570679,
+          "actual_freq": 0.6666666666666666,
+          "count": 33,
+          "calibration_error": 0.16982336839040124
+        },
+        {
+          "bin": 10,
+          "bin_min": 0.9,
+          "bin_max": 1.0,
+          "predicted_freq": 0.9181308746337891,
+          "actual_freq": 0.5,
+          "count": 10,
+          "calibration_error": 0.41813087463378906
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "112",
+          "win_rate": 0.38392857142857145,
+          "total_staked": 112.0,
+          "total_profit": -26.0,
+          "roi": -0.23214285714285715,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.2116510911655561
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "106",
+          "win_rate": 0.37735849056603776,
+          "total_staked": 106.0,
+          "total_profit": -26.0,
+          "roi": -0.24528301886792453,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.22160625253786428
+        }
+      }
+    }
+  },
+  "ft_transformer": {
+    "train": {
+      "set_name": "train",
+      "n_games": 1658,
+      "accuracy": 0.638118214716526,
+      "brier_score": 0.22050126893929994,
+      "log_loss": 0.6306109666842316,
+      "mean_calibration_error": 0.04488702086088613,
+      "calibration_buckets": [
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.19862939417362213,
+          "actual_freq": 0.0,
+          "count": 1,
+          "calibration_error": 0.19862939417362213
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.2586880326271057,
+          "actual_freq": 0.28125,
+          "count": 128,
+          "calibration_error": 0.022561967372894287
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.355582594871521,
+          "actual_freq": 0.33980582524271846,
+          "count": 206,
+          "calibration_error": 0.015776769628802534
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.45088618993759155,
+          "actual_freq": 0.44485294117647056,
+          "count": 272,
+          "calibration_error": 0.006033248761120991
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5478021502494812,
+          "actual_freq": 0.5115606936416185,
+          "count": 346,
+          "calibration_error": 0.03624145660786271
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6496822237968445,
+          "actual_freq": 0.6344827586206897,
+          "count": 290,
+          "calibration_error": 0.01519946517615478
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7514058947563171,
+          "actual_freq": 0.7063492063492064,
+          "count": 252,
+          "calibration_error": 0.045056688407110745
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8331635594367981,
+          "actual_freq": 0.852760736196319,
+          "count": 163,
+          "calibration_error": 0.019597176759520885
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "582",
+          "win_rate": 0.36082474226804123,
+          "total_staked": 582.0,
+          "total_profit": -162.0,
+          "roi": -0.27835051546391754,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.22469377662994441
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "554",
+          "win_rate": 0.351985559566787,
+          "total_staked": 554.0,
+          "total_profit": -164.0,
+          "roi": -0.296028880866426,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.23401013909959756
+        }
+      }
+    },
+    "validation": {
+      "set_name": "validation",
+      "n_games": 267,
+      "accuracy": 0.651685393258427,
+      "brier_score": 0.22265364660058468,
+      "log_loss": 0.6384836033488928,
+      "mean_calibration_error": 0.06001951150966645,
+      "calibration_buckets": [
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.2671799957752228,
+          "actual_freq": 0.3684210526315789,
+          "count": 19,
+          "calibration_error": 0.10124105685635615
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.35889357328414917,
+          "actual_freq": 0.35135135135135137,
+          "count": 37,
+          "calibration_error": 0.007542221932797799
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.44764623045921326,
+          "actual_freq": 0.40425531914893614,
+          "count": 47,
+          "calibration_error": 0.043390911310277114
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5419304966926575,
+          "actual_freq": 0.5,
+          "count": 46,
+          "calibration_error": 0.04193049669265747
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6419327855110168,
+          "actual_freq": 0.7083333333333334,
+          "count": 48,
+          "calibration_error": 0.06640054782231652
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7491313219070435,
+          "actual_freq": 0.7857142857142857,
+          "count": 42,
+          "calibration_error": 0.03658296380724224
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8373340964317322,
+          "actual_freq": 0.7142857142857143,
+          "count": 28,
+          "calibration_error": 0.12304838214601788
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "97",
+          "win_rate": 0.35051546391752575,
+          "total_staked": 97.0,
+          "total_profit": -29.0,
+          "roi": -0.29896907216494845,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.20530643899175524
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "93",
+          "win_rate": 0.3655913978494624,
+          "total_staked": 93.0,
+          "total_profit": -25.0,
+          "roi": -0.26881720430107525,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.2122798384025803
+        }
+      }
+    },
+    "test": {
+      "set_name": "test",
+      "n_games": 267,
+      "accuracy": 0.5842696629213483,
+      "brier_score": 0.23789921377305523,
+      "log_loss": 0.6689551462060057,
+      "mean_calibration_error": 0.08802202098344236,
+      "calibration_buckets": [
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.2613612711429596,
+          "actual_freq": 0.45454545454545453,
+          "count": 11,
+          "calibration_error": 0.19318418340249494
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.34670233726501465,
+          "actual_freq": 0.4,
+          "count": 35,
+          "calibration_error": 0.053297662734985374
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.45737504959106445,
+          "actual_freq": 0.5365853658536586,
+          "count": 41,
+          "calibration_error": 0.07921031626259412
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.544104278087616,
+          "actual_freq": 0.48214285714285715,
+          "count": 56,
+          "calibration_error": 0.061961420944758816
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.646996259689331,
+          "actual_freq": 0.660377358490566,
+          "count": 53,
+          "calibration_error": 0.013381098801234947
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7502102851867676,
+          "actual_freq": 0.66,
+          "count": 50,
+          "calibration_error": 0.09021028518676755
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8391948938369751,
+          "actual_freq": 0.7142857142857143,
+          "count": 21,
+          "calibration_error": 0.1249091795512608
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "105",
+          "win_rate": 0.37142857142857144,
+          "total_staked": 105.0,
+          "total_profit": -27.0,
+          "roi": -0.2571428571428571,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.21636004973951214
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "101",
+          "win_rate": 0.36633663366336633,
+          "total_staked": 101.0,
+          "total_profit": -27.0,
+          "roi": -0.26732673267326734,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.22351531519247653
+        }
+      }
+    }
+  },
+  "ensemble": {
+    "train": {
+      "set_name": "train",
+      "n_games": 1658,
+      "accuracy": 0.8407720144752714,
+      "brier_score": 0.11521219898341188,
+      "log_loss": 0.3653503188579241,
+      "mean_calibration_error": 0.020186290046460612,
+      "calibration_buckets": [
+        {
+          "bin": 1,
+          "bin_min": 0.0,
+          "bin_max": 0.1,
+          "predicted_freq": 0.04318258678502271,
+          "actual_freq": 0.023890784982935155,
+          "count": 293,
+          "calibration_error": 0.019291801802087553
+        },
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.15282674418475536,
+          "actual_freq": 0.14666666666666667,
+          "count": 150,
+          "calibration_error": 0.006160077518088697
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.24826658783943106,
+          "actual_freq": 0.2777777777777778,
+          "count": 126,
+          "calibration_error": 0.029511189938346727
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.3520058622895937,
+          "actual_freq": 0.3333333333333333,
+          "count": 96,
+          "calibration_error": 0.01867252895626037
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.45225320535502606,
+          "actual_freq": 0.4111111111111111,
+          "count": 90,
+          "calibration_error": 0.04114209424391496
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5532879107407448,
+          "actual_freq": 0.5760869565217391,
+          "count": 92,
+          "calibration_error": 0.022799045780994343
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6490937351164351,
+          "actual_freq": 0.7073170731707317,
+          "count": 82,
+          "calibration_error": 0.05822333805429658
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7503683035700688,
+          "actual_freq": 0.75,
+          "count": 112,
+          "calibration_error": 0.0003683035700687842
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8567353622271843,
+          "actual_freq": 0.8606060606060606,
+          "count": 165,
+          "calibration_error": 0.003870698378876325
+        },
+        {
+          "bin": 10,
+          "bin_min": 0.9,
+          "bin_max": 1.0,
+          "predicted_freq": 0.9605655583093017,
+          "actual_freq": 0.9623893805309734,
+          "count": 452,
+          "calibration_error": 0.001823822221671767
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "638",
+          "win_rate": 0.7272727272727273,
+          "total_staked": 638.0,
+          "total_profit": 290.0,
+          "roi": 0.45454545454545453,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.2704390509295904
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "588",
+          "win_rate": 0.7329931972789115,
+          "total_staked": 588.0,
+          "total_profit": 274.0,
+          "roi": 0.46598639455782315,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.2898764530389947
+        }
+      }
+    },
+    "validation": {
+      "set_name": "validation",
+      "n_games": 267,
+      "accuracy": 0.5955056179775281,
+      "brier_score": 0.31300795204093496,
+      "log_loss": 0.9916608203860563,
+      "mean_calibration_error": 0.20926848216157526,
+      "calibration_buckets": [
+        {
+          "bin": 1,
+          "bin_min": 0.0,
+          "bin_max": 0.1,
+          "predicted_freq": 0.05175923033715895,
+          "actual_freq": 0.4722222222222222,
+          "count": 36,
+          "calibration_error": 0.42046299188506325
+        },
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.1466968174976044,
+          "actual_freq": 0.4074074074074074,
+          "count": 27,
+          "calibration_error": 0.260710589909803
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.2398051258358965,
+          "actual_freq": 0.45454545454545453,
+          "count": 22,
+          "calibration_error": 0.21474032870955803
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.3495215835628867,
+          "actual_freq": 0.5625,
+          "count": 16,
+          "calibration_error": 0.2129784164371133
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.449468906674476,
+          "actual_freq": 0.3333333333333333,
+          "count": 9,
+          "calibration_error": 0.11613557334114266
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5503647831046782,
+          "actual_freq": 0.6666666666666666,
+          "count": 18,
+          "calibration_error": 0.11630188356198845
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6499974552710047,
+          "actual_freq": 0.6363636363636364,
+          "count": 22,
+          "calibration_error": 0.013633818907368367
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7593398681795996,
+          "actual_freq": 0.5714285714285714,
+          "count": 14,
+          "calibration_error": 0.18791129675102825
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8521508944104252,
+          "actual_freq": 0.625,
+          "count": 32,
+          "calibration_error": 0.22715089441042524
+        },
+        {
+          "bin": 10,
+          "bin_min": 0.9,
+          "bin_max": 1.0,
+          "predicted_freq": 0.9564618446036706,
+          "actual_freq": 0.6338028169014085,
+          "count": 71,
+          "calibration_error": 0.32265902770226207
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "117",
+          "win_rate": 0.4188034188034188,
+          "total_staked": 117.0,
+          "total_profit": -19.0,
+          "roi": -0.1623931623931624,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.2575685342666993
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "106",
+          "win_rate": 0.39622641509433965,
+          "total_staked": 106.0,
+          "total_profit": -22.0,
+          "roi": -0.20754716981132076,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.2799569325783616
+        }
+      }
+    },
+    "test": {
+      "set_name": "test",
+      "n_games": 267,
+      "accuracy": 0.5543071161048689,
+      "brier_score": 0.3335463807066396,
+      "log_loss": 1.0982165754647606,
+      "mean_calibration_error": 0.23296029052083847,
+      "calibration_buckets": [
+        {
+          "bin": 1,
+          "bin_min": 0.0,
+          "bin_max": 0.1,
+          "predicted_freq": 0.044242885442127323,
+          "actual_freq": 0.625,
+          "count": 24,
+          "calibration_error": 0.5807571145578727
+        },
+        {
+          "bin": 2,
+          "bin_min": 0.1,
+          "bin_max": 0.2,
+          "predicted_freq": 0.1529018068133875,
+          "actual_freq": 0.4482758620689655,
+          "count": 29,
+          "calibration_error": 0.295374055255578
+        },
+        {
+          "bin": 3,
+          "bin_min": 0.2,
+          "bin_max": 0.30000000000000004,
+          "predicted_freq": 0.24136390288322432,
+          "actual_freq": 0.5833333333333334,
+          "count": 12,
+          "calibration_error": 0.3419694304501091
+        },
+        {
+          "bin": 4,
+          "bin_min": 0.30000000000000004,
+          "bin_max": 0.4,
+          "predicted_freq": 0.37540194044730824,
+          "actual_freq": 0.4375,
+          "count": 16,
+          "calibration_error": 0.062098059552691764
+        },
+        {
+          "bin": 5,
+          "bin_min": 0.4,
+          "bin_max": 0.5,
+          "predicted_freq": 0.4491521007377126,
+          "actual_freq": 0.5,
+          "count": 16,
+          "calibration_error": 0.05084789926228739
+        },
+        {
+          "bin": 6,
+          "bin_min": 0.5,
+          "bin_max": 0.6000000000000001,
+          "predicted_freq": 0.5526392165805639,
+          "actual_freq": 0.5909090909090909,
+          "count": 22,
+          "calibration_error": 0.03826987432852702
+        },
+        {
+          "bin": 7,
+          "bin_min": 0.6000000000000001,
+          "bin_max": 0.7000000000000001,
+          "predicted_freq": 0.6553305302143322,
+          "actual_freq": 0.5625,
+          "count": 16,
+          "calibration_error": 0.09283053021433219
+        },
+        {
+          "bin": 8,
+          "bin_min": 0.7000000000000001,
+          "bin_max": 0.8,
+          "predicted_freq": 0.7485557828746763,
+          "actual_freq": 0.46153846153846156,
+          "count": 26,
+          "calibration_error": 0.2870173213362147
+        },
+        {
+          "bin": 9,
+          "bin_min": 0.8,
+          "bin_max": 0.9,
+          "predicted_freq": 0.8515714132346056,
+          "actual_freq": 0.5862068965517241,
+          "count": 29,
+          "calibration_error": 0.2653645166828815
+        },
+        {
+          "bin": 10,
+          "bin_min": 0.9,
+          "bin_max": 1.0,
+          "predicted_freq": 0.9644247529185391,
+          "actual_freq": 0.6493506493506493,
+          "count": 77,
+          "calibration_error": 0.3150741035678898
+        }
+      ],
+      "roi_results": {
+        "roi_threshold_0.03": {
+          "n_bets": "119",
+          "win_rate": 0.4369747899159664,
+          "total_staked": 119.0,
+          "total_profit": -15.0,
+          "roi": -0.12605042016806722,
+          "edge_threshold": 0.03,
+          "avg_edge": 0.30855031070424915
+        },
+        "roi_threshold_0.05": {
+          "n_bets": "115",
+          "win_rate": 0.43478260869565216,
+          "total_staked": 115.0,
+          "total_profit": -15.0,
+          "roi": -0.13043478260869565,
+          "edge_threshold": 0.05,
+          "avg_edge": 0.3178860921196367
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "game": "HOU @ KC",
+  "date": "2025-12-07",
+  "prediction": {
+    "home_win_probability": 1.0,
+    "away_win_probability": 0.0,
+    "implied_spread": null,
+    "recommendation": "Home"
+  },
+  "market_data": {
+    "odds_spread": 4.5,
+    "odds_total": 41.5,
+    "edge": null
+  },
+  "weather": {
+    "temperature_f": 30.4,
+    "feels_like_f": 24.3,
+    "wind_speed_mph": 6.0,
+    "wind_gust_mph": 12.1,
+    "wind_direction": "NNE",
+    "precipitation_prob": 0,
+    "precipitation_inches": 0.0,
+    "humidity_pct": 80,
+    "visibility_miles": 10.0,
+    "weather_code": 1,
+    "weather_description": "Mostly Clear",
+    "is_dome": false
+  },
+  "injuries": {
+    "home": 2,
+    "away": 2
+  }
+}

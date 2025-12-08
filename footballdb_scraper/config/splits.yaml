@@ -1,0 +1,156 @@
+# FootballDB Split Configuration
+
+base_urls:
+  player_splits: "https://www.footballdb.com/statistics/nfl/player-splits"
+  team_splits: "https://www.footballdb.com/statistics/nfl/team-splits"
+  coaches: "https://www.footballdb.com/coaches"
+
+# Stat categories
+stat_types:
+  - passing
+  - rushing
+  - receiving
+  - kicking
+  - punting
+  - defense
+
+# Split categories with URL slugs
+splits:
+  # Season totals
+  season:
+    - slug: "year-to-date"
+      description: "Full season totals"
+  
+  # Location splits
+  location:
+    - slug: "home-games"
+      description: "Home game performance"
+    - slug: "away-games"
+      description: "Away game performance"
+  
+  # Surface splits (HIGH VALUE)
+  surface:
+    - slug: "surface-grass"
+      description: "Performance on grass"
+    - slug: "surface-turf"
+      description: "Performance on artificial turf"
+  
+  # Quarter splits
+  quarter:
+    - slug: "first-quarter"
+      description: "1st quarter performance"
+    - slug: "second-quarter"
+      description: "2nd quarter performance"
+    - slug: "third-quarter"
+      description: "3rd quarter performance"
+    - slug: "fourth-quarter"
+      description: "4th quarter performance"
+  
+  # Half splits
+  half:
+    - slug: "first-half"
+      description: "First half performance"
+    - slug: "second-half"
+      description: "Second half performance"
+    - slug: "last-two-minutes"
+      description: "Last 2:00 of each half"
+  
+  # Score differential splits (HIGH VALUE)
+  score_differential:
+    - slug: "leading-by-17-plus"
+      description: "When ahead by 17+"
+    - slug: "leading-by-9-to-16"
+      description: "When ahead by 9-16"
+    - slug: "leading-by-1-to-8"
+      description: "When ahead by 1-8"
+    - slug: "tied-games"
+      description: "When game is tied"
+    - slug: "trailing-by-1-to-8"
+      description: "When behind by 1-8"
+    - slug: "trailing-by-9-to-16"
+      description: "When behind by 9-16"
+    - slug: "trailing-by-17-plus"
+      description: "When behind by 17+"
+  
+  # Day of week splits (HIGH VALUE for Thursday games)
+  day_of_week:
+    - slug: "sunday-games"
+      description: "Sunday games"
+    - slug: "monday-games"
+      description: "Monday Night Football"
+    - slug: "thursday-games"
+      description: "Thursday Night Football"
+    - slug: "other-days"
+      description: "Other days (Saturday, etc.)"
+  
+  # Month splits
+  month:
+    - slug: "september"
+      description: "September games"
+    - slug: "october"
+      description: "October games"
+    - slug: "november"
+      description: "November games"
+    - slug: "december"
+      description: "December games"
+    - slug: "january"
+      description: "January games (playoffs)"
+  
+  # Division/Conference splits
+  opponent_type:
+    - slug: "division-games"
+      description: "Division opponents"
+    - slug: "non-division-games"
+      description: "Non-division opponents"
+    - slug: "games-vs-afc"
+      description: "AFC opponents"
+    - slug: "games-vs-nfc"
+      description: "NFC opponents"
+  
+  # Game result splits
+  result:
+    - slug: "wins"
+      description: "Performance in wins"
+    - slug: "losses"
+      description: "Performance in losses"
+  
+  # Down splits
+  down:
+    - slug: "first-down"
+      description: "First down plays"
+    - slug: "second-down"
+      description: "Second down plays"
+    - slug: "third-down"
+      description: "Third down plays"
+    - slug: "fourth-down"
+      description: "Fourth down plays"
+    - slug: "first-and-ten"
+      description: "1st and 10 situations"
+
+# Priority splits for model features
+priority_splits:
+  high:
+    - "surface-grass"
+    - "surface-turf"
+    - "leading-by-1-to-8"
+    - "trailing-by-1-to-8"
+    - "tied-games"
+    - "fourth-quarter"
+    - "thursday-games"
+  medium:
+    - "home-games"
+    - "away-games"
+    - "third-down"
+    - "second-half"
+    - "division-games"
+  low:
+    - "september"
+    - "october"
+    - "november"
+    - "december"
+
+# Historical data availability
+data_availability:
+  start_year: 2009  # FootballDB has data back to 2009
+  current_year: 2025
+

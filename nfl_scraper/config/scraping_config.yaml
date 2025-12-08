@@ -1,0 +1,26 @@
+# Rate limiting
+rate_limit:
+  requests_per_second: 0.5  # 1 request every 2 seconds
+  max_retries: 3
+  retry_delay: 5  # seconds
+  backoff_multiplier: 2
+
+# Request settings
+request:
+  timeout: 30
+  user_agents:
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# Caching
+cache:
+  enabled: true
+  directory: "data/raw/cache"
+  expiry_hours: 24  # Re-fetch after 24 hours
+
+# Logging
+logging:
+  level: INFO
+  file: "logs/scraper.log"
+

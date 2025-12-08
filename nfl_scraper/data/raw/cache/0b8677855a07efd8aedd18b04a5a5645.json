@@ -1,0 +1,818 @@
+{
+  "injuries": [
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400325-48de-3d6a-be29-8f829437f4c8",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BAL",
+        "fullName": "Baltimore Ravens"
+      },
+      "person": {
+        "id": "3200464c-4f57-7002-1160-832e9618f0fd",
+        "firstName": "Xavien",
+        "commonFirstName": "Zay",
+        "lastName": "Flowers",
+        "displayName": "Zay Flowers",
+        "gsisId": "00-0039064",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/sqqh8gmxdpo55qwpsszj"
+      },
+      "injuries": [
+        "Knee"
+      ],
+      "injuryStatus": "OUT",
+      "practices": [
+        "Knee"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-07",
+          "status": "DIDNOT"
+        },
+        {
+          "date": "2025-01-08",
+          "status": "DIDNOT"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "DIDNOT"
+        }
+      ],
+      "practiceStatus": "DIDNOT",
+      "position": "WR"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400325-48de-3d6a-be29-8f829437f4c8",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BAL",
+        "fullName": "Baltimore Ravens"
+      },
+      "person": {
+        "id": "32004841-4d24-6970-5c23-1fbf7506b4a0",
+        "firstName": "Kyle",
+        "commonFirstName": "Kyle",
+        "lastName": "Hamilton",
+        "displayName": "Kyle Hamilton",
+        "gsisId": "00-0038038",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/chrrlhiriydmjomv3s2f"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Knee"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-07",
+          "status": "LIMITED"
+        },
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "S"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400325-48de-3d6a-be29-8f829437f4c8",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BAL",
+        "fullName": "Baltimore Ravens"
+      },
+      "person": {
+        "id": "32004841-5236-3871-2f21-12e477161944",
+        "firstName": "Deonte",
+        "commonFirstName": "Deonte",
+        "lastName": "Harty",
+        "displayName": "Deonte Harty",
+        "gsisId": "00-0035215",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/fh7rbtvohdkaacqaxqke"
+      },
+      "injuries": [
+        "Knee",
+        "Not injury related - personal matter"
+      ],
+      "injuryStatus": "QUESTIONABLE",
+      "practices": [
+        "Knee",
+        "Not injury related - personal "
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-07",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-08",
+          "status": "DIDNOT"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "WR"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400325-48de-3d6a-be29-8f829437f4c8",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BAL",
+        "fullName": "Baltimore Ravens"
+      },
+      "person": {
+        "id": "32004849-4c32-6301-179f-7d7fb01289c2",
+        "firstName": "Justice",
+        "commonFirstName": "Justice",
+        "lastName": "Hill",
+        "displayName": "Justice Hill",
+        "gsisId": "00-0034975",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/h6p9crhra8ehxju3ubza"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Concussion",
+        "Illness"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-07",
+          "status": "LIMITED"
+        },
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "RB"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32004245-5223-6424-136f-901f81674ee9",
+        "firstName": "Terrel",
+        "commonFirstName": "Terrel",
+        "lastName": "Bernard",
+        "displayName": "Terrel Bernard",
+        "gsisId": "00-0037254",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/ryvz6uol9kymdgslc0rh"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Quadricep"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "LB"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32004341-5264-4270-5a2f-d6f27bdca523",
+        "firstName": "DeWayne",
+        "commonFirstName": "DeWayne",
+        "lastName": "Carter",
+        "displayName": "DeWayne Carter",
+        "gsisId": "00-0039873",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/kvvk49few3r68c7xl2xy"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Wrist",
+        "Calf"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "DT"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "3200434f-4429-5893-a782-f93f43650933",
+        "firstName": "Brandon",
+        "commonFirstName": "Brandon",
+        "lastName": "Codrington",
+        "displayName": "Brandon Codrington",
+        "gsisId": "00-0039333",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/zcfwdsirygqnl15jnd0m"
+      },
+      "injuries": [
+        "Hamstring"
+      ],
+      "injuryStatus": "QUESTIONABLE",
+      "practices": [
+        "Hamstring"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "DIDNOT"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "LIMITED"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "LIMITED"
+        }
+      ],
+      "practiceStatus": "LIMITED",
+      "position": "CB"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "3200434f-4f48-7703-16a5-c78426109031",
+        "firstName": "Amari",
+        "commonFirstName": "Amari",
+        "lastName": "Cooper",
+        "displayName": "Amari Cooper",
+        "gsisId": "00-0031544",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/zmtzqznqui37unmo5xv9"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Back"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "WR"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "3200444f-5560-4176-bafa-285edcbca1af",
+        "firstName": "Rasul",
+        "commonFirstName": "Rasul",
+        "lastName": "Douglas",
+        "displayName": "Rasul Douglas",
+        "gsisId": "00-0033551",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/f2ac9dmdbhc6rvgllcbt"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Knee"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "CB"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32004841-4d40-1130-e55c-c458b6bff7bf",
+        "firstName": "Damar",
+        "commonFirstName": "Damar",
+        "lastName": "Hamlin",
+        "displayName": "Damar Hamlin",
+        "gsisId": "00-0036888",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/y3up9bdo5vczbq5zskxo"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Rib"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "S"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "3200494e-4754-5433-6702-5b4c59aca3a8",
+        "firstName": "Ja'Marcus",
+        "commonFirstName": "Ja'Marcus",
+        "lastName": "Ingram",
+        "displayName": "Ja'Marcus Ingram",
+        "gsisId": "00-0037661",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/d0p0jgugnjuez8uwejbl"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Not injury related - personal matter"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "DIDNOT"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "DIDNOT"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "CB"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32004a4f-4800-0019-d088-6a9e623c3c3d",
+        "firstName": "Ty",
+        "commonFirstName": "Ty",
+        "lastName": "Johnson",
+        "displayName": "Ty Johnson",
+        "gsisId": "00-0035537",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/hmnzcfm56ojey6myomjg"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Knee"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "RB"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32004b49-4e06-9130-e563-7edd228031c8",
+        "firstName": "Dalton",
+        "commonFirstName": "Dalton",
+        "lastName": "Kincaid",
+        "displayName": "Dalton Kincaid",
+        "gsisId": "00-0038933",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/zwkeaiecuyafkidllebz"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Knee"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "TE"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32004c45-5708-9606-6b0a-fbc9630aa26d",
+        "firstName": "Cameron",
+        "commonFirstName": "Cam",
+        "lastName": "Lewis",
+        "displayName": "Cam Lewis",
+        "gsisId": "00-0035357",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/zjktx8s1xlcacohcfimq"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Shoulder"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "S"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32004d49-4c03-3577-24b3-664d0e1e9524",
+        "firstName": "Matthew",
+        "commonFirstName": "Matt",
+        "lastName": "Milano",
+        "displayName": "Matt Milano",
+        "gsisId": "00-0033571",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/ikmvrrbegypwn8wejcge"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Biceps"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "LB"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32005048-4938-6190-4549-4deed276dff3",
+        "firstName": "Jordan",
+        "commonFirstName": "Jordan",
+        "lastName": "Phillips",
+        "displayName": "Jordan Phillips",
+        "gsisId": "00-0031557",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/hn887nvbphkycvlkvlms"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Back"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "DT"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32005241-5050-5098-ef4c-235f382d663d",
+        "firstName": "Taylor",
+        "commonFirstName": "Taylor",
+        "lastName": "Rapp",
+        "displayName": "Taylor Rapp",
+        "gsisId": "00-0035663",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/olasn9vezmd1uvomkpws"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Neck"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "S"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32005341-4d63-3285-ce5d-61e91947654e",
+        "firstName": "Curtis",
+        "commonFirstName": "Curtis",
+        "lastName": "Samuel",
+        "displayName": "Curtis Samuel",
+        "gsisId": "00-0033282",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/vyibrxegz375ntjby5zs"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Rib"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "WR"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "3200534d-4f47-4349-7350-861e0a999ca9",
+        "firstName": "Dawuane",
+        "commonFirstName": "Dawuane",
+        "lastName": "Smoot",
+        "displayName": "Dawuane Smoot",
+        "gsisId": "00-0033907",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/gmwsx9fddqfaqsm6dx0a"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Wrist"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "DE"
+    },
+    {
+      "season": 2024,
+      "seasonType": "POST",
+      "week": 1,
+      "team": {
+        "id": "10400610-c40e-a673-1743-2ce2a5d5d731",
+        "currentLogo": "https://static.www.nfl.com/{formatInstructions}/league/api/clubs/logos/BUF",
+        "fullName": "Buffalo Bills"
+      },
+      "person": {
+        "id": "32005749-4c24-3940-708f-17c023a4d993",
+        "firstName": "Dorian",
+        "commonFirstName": "Dorian",
+        "lastName": "Williams",
+        "displayName": "Dorian Williams",
+        "gsisId": "00-0038557",
+        "headshot": "https://static.www.nfl.com/image/upload/{formatInstructions}/league/fsslbcbp87yehsofpwg1"
+      },
+      "injuries": [],
+      "injuryStatus": null,
+      "practices": [
+        "Elbow"
+      ],
+      "practiceDays": [
+        {
+          "date": "2025-01-08",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-09",
+          "status": "FULL"
+        },
+        {
+          "date": "2025-01-10",
+          "status": "FULL"
+        }
+      ],
+      "practiceStatus": "FULL",
+      "position": "LB"
+    }
+  ],
+  "pagination": {
+    "limit": 20,
+    "token": "o1hZTwAAABQ="
+  }
+}
